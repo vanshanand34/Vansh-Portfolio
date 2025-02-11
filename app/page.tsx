@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Vansh Anand Portfolio",
+  description: "Portfolio of Vansh Anand",
+}
 
 export default function Home() {
   return (

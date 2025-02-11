@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Navbar from "../Navbar";
 import { Metadata } from "next";
-import MyImage from "../vansh_passport.jpg";
+import Link from "next/link";
+import LinkButtons from "../LinkButtons";
 
 export const metadata: Metadata = {
   title: "Vansh Anand Portfolio- About Me",
@@ -12,44 +12,52 @@ export default function Home() {
   return (
     <>
       <div className="h-screen w-full">
+        {/* Navbar */}
         <Navbar activeElement="about-me"></Navbar>
+
         <div className="font-mono fixed top-[15vh] left-[3vw] ">
           <div className="flex justify-between items-center font-semibold py-4">
-            <div className="p-4 text-2xl">
+            <div className="lg:p-4 p-2 text-lg hidden lg:block">
               <div className="py-4 cursor-pointer">
-                -- Introduction
+                <Link href="#intro" >
+                  - Introduction
+                </Link>
               </div>
               <div className="py-4 cursor-pointer">
-                -- Work Experience
+                <Link href="#experience">
+                  - Work Experience
+                </Link>
               </div>
               <div className="py-4 cursor-pointer">
-                -- Education
+                <Link href="#education">
+                  - Education
+                </Link>
               </div>
             </div>
-            {/* <div className="border border-white rounded-full shadow mix-blend-darken">
-              <Image
-                src={MyImage}
-                style={{
-                  objectFit: "cover",
-                  height:"250px",
-                  width:"250px"
-                }}
-                className="rounded-full"
-                alt="My Passport Sized Image"
-              ></Image>
-            </div> */}
-            <div></div>
           </div>
         </div>
-        <div className="m-4 p-4 border border-red-500 h-[205vh] ml-[25vw]">
+        <div className="lg:mx-4 mx-6 mt-12 p-4 border shadow shadow-gray-600 border-indigo-300 lg:ml-[24vw]" id="intro">
           <div className="mx-4 py-4">
-            <div className="text-3xl font-sans font-semibold">
+
+            <div className="md:text-7xl text-4xl font-sans font-bold py-2">
               Vansh Anand
             </div>
-            <div className="text-gray-400 text-xl font-semibold font-sans">
-              Backend Developer
+
+            <div className="text-gray-400 md:text-3xl text-2xl font-bold font-sans py-2">
+              Full Stack Developer
             </div>
+
+            <LinkButtons />
+
+            <div className="md:font-mono md:font-semibold md:text-lg text-sm p-2">
+              Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
+            </div>
+
           </div>
+        </div>
+        <div className="h-[50vh] my-12 lg:mx-4 mx-8 p-4 border shadow shadow-gray-600 border-indigo-300 lg:ml-[24vw]" id="education">
+        </div>
+        <div className="h-[50vh] my-12 p-4 lg:mx-4 mx-8 border shadow shadow-gray-600 border-indigo-300 lg:ml-[24vw]" id="experience">
         </div>
       </div >
     </>
