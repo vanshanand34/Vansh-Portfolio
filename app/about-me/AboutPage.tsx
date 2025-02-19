@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-screen w-full " id="container"
+      <div className="min-h-screen text-white w-full bg-[#1b1b1b]" id="container"
         onMouseMove={(event: React.MouseEvent) => trackCursor(event)}>
         {/* Navbar */}
         <div id="cursor"
