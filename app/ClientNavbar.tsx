@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import ResponsiveNavbar from "./Navbar";
+// import ResponsiveNavbar from "./Navbar";
 import { JSX } from "react";
 
 const NoSSR = dynamic(() => import("./Navbar"), {ssr: false})

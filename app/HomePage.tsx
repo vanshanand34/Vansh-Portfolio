@@ -1,7 +1,7 @@
 'use client'
 
 import Navbar from "./ClientNavbar";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import trackCursor from "./MovingBackground";
 import Link from "next/link";
 import LinkButtons from "./LinkButtons";
@@ -24,7 +24,7 @@ export default function HomePage() {
         </div>
 
         <div className="md:text-2xl text-lg text-bold text-gray-300 font-mono mx-[4vw] my-8">
-          I'm Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
+          I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
         <button className="px-4 py-1 border border-blue-500 shadow-lg mx-[4vw] hover:bg-gray-900  rounded-lg text-lg">

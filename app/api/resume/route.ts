@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import fs from 'fs';
 import path from "path";
-import { readFile } from "fs/promises";
+// import { readFile } from "fs/promises";
 import { NextResponse } from "next/server";
 
 const filePath = path.resolve('.', 'public', 'Vansh-Anand-Resume.pdf');

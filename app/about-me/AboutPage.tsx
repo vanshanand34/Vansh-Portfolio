@@ -5,6 +5,8 @@ import Navbar from "../ClientNavbar";
 import Link from "next/link";
 import LinkButtons from "../LinkButtons";
 import trackCursor from "../MovingBackground";
+
+
 export default function Home() {
 
   return (
@@ -56,7 +58,7 @@ export default function Home() {
 
               <LinkButtons />
 
-              <div className="md:font-semibold md:text-lg text-lg p-2">
+              <div className="md:font-semibold font-sans md:text-lg text-lg p-2">
                 Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
               </div>
 
@@ -74,7 +76,7 @@ export default function Home() {
                 </div>
 
                 <div className="my-4 md:font-semibold md:text-md text-xs text-gray-400">
-                  JULY 2024- JAN 2025
+                  JULY 2024 - JAN 2025
                 </div>
               </div>
 
@@ -112,7 +114,7 @@ export default function Home() {
                   </div>
 
                   <div className="font-semibold md:text-md text-sm text-gray-400">
-                    NOV 2022- AUG 2026
+                    NOV 2022 - AUG 2026
                   </div>
                 </div>
 
@@ -127,7 +129,7 @@ export default function Home() {
                   </div>
 
                   <div className="font-semibold md:text-md text-sm text-gray-400">
-                    JUNE 2014- AUG 2022
+                    JUNE 2014 - AUG 2022
                   </div>
                 </div>
 

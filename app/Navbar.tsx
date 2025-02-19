@@ -68,7 +68,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 </div >
             </div >
 
-            <div className="fixed top-[3vh] md:right-[3vw] right-[2vw] text-white md:text-md text-xs" id="currTime">
+            <div className="bg-gray-800 p-2 rounded-lg fixed top-[3vh] md:right-[3vw] sm:right-[2vw] right-[1vw] text-white md:text-md text-xs" id="currTime">
                 {currTime?.toLocaleTimeString()}
             </div>
         </>

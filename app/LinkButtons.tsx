@@ -30,7 +30,7 @@ export default function LinkButtons(
                     </div>
                 </button>
             </Link>
-            <Link href="anandvansh34@gmail.com">
+            <Link href="mailto:anandvansh34@gmail.com">
                 <button className="inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
                 py-2 md:px-4 px-2 border border-blue-300 rounded-lg bg-[#28282838] m-1">
                     <GmailLogo width={width} height={height}/>

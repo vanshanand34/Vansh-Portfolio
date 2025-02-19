@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import Navbar from "../Navbar";
-import trackCursor from "../MovingBackground";
 import ProjectPage from "./ProjectsPage";
 
 export const metadata: Metadata = {
