@@ -14,7 +14,7 @@ export default function HomePage() {
         onMouseMove={(event: React.MouseEvent) => trackCursor(event)}>
 
         <div id="cursor"
-          className="-z-10 fixed w-[60vw] h-[60vw] bg-[#0099ff0f] rounded-full blur-3xl overflow-hidden">
+          className="fixed w-[60vw] h-[60vw] bg-[#0099ff0f] rounded-full blur-3xl overflow-hidden pointer-events-none">
         </div>
 
         <Navbar activeElement="home"></Navbar>
