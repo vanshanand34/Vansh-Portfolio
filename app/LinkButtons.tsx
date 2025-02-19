@@ -10,11 +10,12 @@ export default function LinkButtons(
 ): JSX.Element {
 
     const buttonTextStyle: string = isHomePage ? "hidden" : "md:text-lg md:block hidden";
+    const borderStyle: string = isHomePage ? "px-1" : "border border-blue-300 px-2";
     return (
-        <div className="py-4 inline-flex items-center gap-2 flex-wrap">
+        <div className="py-4 inline-flex items-center gap-1 flex-wrap">
             <Link href="https://github.com/vanshanand34">
-                <button className="inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
-                py-2 md:px-4 px-2 border border-blue-300 rounded-lg bg-[#28282838] m-1">
+                <button className={`inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
+                py-2 md:px-4 rounded-lg m-1 ${borderStyle}`}>
                     <GithubLogo width={width} height={height}/>
                     <div className={buttonTextStyle}>
                         Github
@@ -22,8 +23,8 @@ export default function LinkButtons(
                 </button>
             </Link>
             <Link href="https://www.linkedin.com/in/anandvansh/">
-                <button className="inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
-                py-2 md:px-4 px-2 border border-blue-300 rounded-lg bg-[#28282838] m-1">
+                <button className={`inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
+                py-2 md:px-4 rounded-lg m-1 ${borderStyle}`}>
                     <LinkedinLogo width={width} height={height}/>
                     <div className={buttonTextStyle}>
                         LinkedIn
@@ -31,8 +32,8 @@ export default function LinkButtons(
                 </button>
             </Link>
             <Link href="mailto:anandvansh34@gmail.com">
-                <button className="inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
-                py-2 md:px-4 px-2 border border-blue-300 rounded-lg bg-[#28282838] m-1">
+                <button className={`inline-flex items-center space-between hover:bg-[#222220] md:font-semibold 
+                py-2 md:px-4 rounded-lg m-1 ${borderStyle}`}>
                     <GmailLogo width={width} height={height}/>
                     <div className={buttonTextStyle}>
                         Email

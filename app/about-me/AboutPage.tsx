@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="my-12 lg:mx-4 md:mx-6 mx-4 p-4 lg:ml-[24vw]" id="experience">
+          <div className="md:my-12 my-8 lg:mx-4 md:mx-6 mx-4 p-4 lg:ml-[24vw]" id="experience">
             <div className="font-bold md:text-6xl text-4xl my-6 md:mx-4">
               Work Experience
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
                   Ayuvya Ayurveda
                 </div>
 
-                <div className="my-4 md:font-semibold md:text-md text-xs text-gray-400">
+                <div className="my-4 font-semibold md:text-md text-sm text-gray-400">
                   JULY 2024 - JAN 2025
                 </div>
               </div>
@@ -102,14 +102,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="my-12 lg:mx-4 mx-6 p-4 lg:ml-[24vw]" id="education">
+          <div className="md:my-8 my-6 lg:mx-4 mx-6 p-4 lg:ml-[24vw]" id="education">
             <div className="font-bold md:text-6xl text-4xl my-6 md:mx-4">
               Education
             </div>
             <div className="md:mx-5">
               <div className="my-4">
                 <div className="flex items-center justify-between">
-                  <div className="py-4 font-bold lg:text-3xl md:text-2xl text-lg text-gray-300">
+                  <div className="py-4 font-bold lg:text-2xl md:text-xl text-md text-gray-300">
                     GTBIT (IPU)
                   </div>
 
@@ -118,11 +118,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="md:text-lg text-sm font-semibold text-blue-400 px-1">
+                <div className="md:text-md text-sm font-semibold text-blue-400 px-1">
                   B-TECH (IT)
                 </div>
               </div>
-              <div className="my-4">
+              {/* <div className="my-4">
                 <div className="flex items-center justify-between">
                   <div className="py-4 font-bold lg:text-2xl md:text-xl text-lg text-gray-300">
                     Kendriya Vidyalaya
@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="md:text-lg text-sm font-semibold text-blue-400 md:px-1">
                   5-12TH
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>

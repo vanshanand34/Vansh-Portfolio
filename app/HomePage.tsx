@@ -18,12 +18,12 @@ export default function HomePage() {
         </div>
 
         <Navbar activeElement="home"></Navbar>
-        <div className="text-5xl md:text-6xl lg:text-7xl text-gray-200 font-bold font-mono mx-[4vw] mt-36">
+        <div className="text-4xl md:text-5xl lg:text-6xl text-gray-200 font-bold font-mono mx-4 mt-36">
           <div>Backend Developer</div>
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-2xl text-lg text-bold text-gray-300 font-mono mx-[4vw] my-8">
+        <div className="md:text-2xl text-lg text-bold text-gray-300 font-mono mx-6 my-8">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
@@ -34,7 +34,7 @@ export default function HomePage() {
         </button>
 
         <footer className="flex justify-between p-4 items-center mt-24">
-          <div className="text-gray-400 md:px-12">
+          <div className="text-gray-400 md:px-12 md:text-md text-sm">
             Created By Vansh Anand
           </div>
 
