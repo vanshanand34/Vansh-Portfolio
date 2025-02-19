@@ -70,7 +70,7 @@ export default function Home() {
               Work Experience
             </div>
             <div className="md:mx-5">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <div className="font-bold lg:text-3xl md:text-2xl text-lg text-gray-300">
                   Ayuvya Ayurveda
                 </div>
