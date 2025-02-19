@@ -18,7 +18,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
     useEffect(() => {
         // console.log(document.readyState, typeof window);
-        if (document.readyState == "complete") changeTime();
+        if (document?.readyState == "complete") changeTime();
     }, [])
 
     function changeTime() {
@@ -31,7 +31,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
             <div className="text-white flex navbar justify-center  font-sans font-semibold">
                 <div className="w-full px-3 md:h-[7vh] text-sm flex justify-center">
 
-                    <div className="fixed bg-[#1f1f1f] my-4 border border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-2 px-2 shadow-[1px_1px_5px_#1a1a1a] gap-4">
+                    <div className="fixed bg-[#1f1f1f] my-4 border border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-2 px-2 shadow-[1px_1px_5px_#1a1a1a] md:gap-4 gap-1">
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
@@ -43,7 +43,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
                         <Link href={"/resume"}>
                             <div className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("resume")}`}>
-                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a95.76,95.76,0,0,1-31.8,71.37A72,72,0,0,0,128,160a40,40,0,1,0-40-40,40,40,0,0,0,40,40,72,72,0,0,0-64.2,39.37h0A96,96,0,1,1,224,128Z" opacity="0.2"></path><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"></path></svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M208,32V192H72a24,24,0,0,0-24,24V56A24,24,0,0,1,72,32h40v96l32-24,32,24V32Z" opacity="0.2"></path><path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8.1,8.1,0,0,0,3.58-.84A8,8,0,0,0,184,128V40h16Z"></path></svg>
                                 <div className="hidden md:block px-1">Resume</div>
                             </div>
                         </Link>
@@ -59,7 +59,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                             <div
                                 className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("about-me")}`}
                             >
-                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M208,32V192H72a24,24,0,0,0-24,24V56A24,24,0,0,1,72,32h40v96l32-24,32,24V32Z" opacity="0.2"></path><path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8.1,8.1,0,0,0,3.58-.84A8,8,0,0,0,184,128V40h16Z"></path></svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a95.76,95.76,0,0,1-31.8,71.37A72,72,0,0,0,128,160a40,40,0,1,0-40-40,40,40,0,0,0,40,40,72,72,0,0,0-64.2,39.37h0A96,96,0,1,1,224,128Z" opacity="0.2"></path><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"></path></svg>
                                 <span className="hidden md:inline px-1">About Me</span>
                             </div>
                         </Link>
@@ -68,8 +68,8 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 </div >
             </div >
 
-            <div className="fixed top-[3vh] right-[3vw] text-white text-md" id="currTime">
-                {currTime.toLocaleTimeString()}
+            <div className="fixed top-[3vh] md:right-[3vw] right-[2vw] text-white md:text-md text-xs" id="currTime">
+                {currTime?.toLocaleTimeString()}
             </div>
         </>
     )
