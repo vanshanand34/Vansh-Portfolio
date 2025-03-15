@@ -24,13 +24,13 @@ function AboutMe() {
             Vansh Anand
           </div>
 
-          <div className="text-blue-300 md:text-3xl text-xl pt-2 md:py-6">
+          <div className="text-blue-300 md:text-3xl text-xl py-3 md:py-6">
             Full Stack Developer
           </div>
 
           <LinkButtons height={16} width={16} />
 
-          <div className="md:font-semibold font-sans md:text-lg text-base">
+          <div className="md:font-semibold font-sans md:text-lg text-base pt-4 sm:pt-0">
             Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
           </div>
 
