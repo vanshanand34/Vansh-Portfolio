@@ -28,10 +28,10 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
     return (
         <>
-            <div className="text-white flex navbar justify-center  font-sans font-semibold">
+            <div className="fixed text-white flex navbar justify-center font-sans font-semibold w-full p-2 py-4 z-10">
                 <div className="w-full px-3 md:h-[7vh] text-sm flex justify-center">
 
-                    <div className="fixed bg-[#1f1f1f] my-4 border border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-2 px-2 shadow-[1px_1px_5px_#1a1a1a] md:gap-4 gap-1">
+                    <div className="bg-[#1b1b1baa] backdrop-blur-lg border border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-2 shadow-[1px_1px_5px_#1a1a1a] md:gap-4 gap-1">
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
