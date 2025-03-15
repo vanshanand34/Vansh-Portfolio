@@ -1,7 +1,5 @@
 'use client'
 
-import Navbar from "../ClientNavbar";
-import trackCursor from "../MovingBackground";
 import ProjectCard from "./ProjectCard";
 import ParentLayout from "../ParentLayout";
 

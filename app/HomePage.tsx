@@ -1,8 +1,5 @@
 'use client'
 
-import Navbar from "./ClientNavbar";
-// import { Metadata } from "next";
-import trackCursor from "./MovingBackground";
 import Link from "next/link";
 import LinkButtons from "./LinkButtons";
 import ParentLayout from "./ParentLayout";

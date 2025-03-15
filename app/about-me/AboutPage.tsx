@@ -1,10 +1,7 @@
 'use client'
 
 import React from "react";
-import Navbar from "../ClientNavbar";
-import Link from "next/link";
 import LinkButtons from "../LinkButtons";
-import trackCursor from "../MovingBackground";
 import ParentLayout from "../ParentLayout";
 
 export default function AboutMePage() {
