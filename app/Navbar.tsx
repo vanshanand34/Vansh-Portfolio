@@ -12,7 +12,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
         return (
             activeElement == currNavItem ?
                 "bg-gray-800 outline outline-1 outline-gray-600" :
-                "hover:bg-gray-900 hover:outline hover:outline-1 hover:outline-gray-600"
+                "hover:bg-slate-900 hover:outline hover:outline-1 hover:outline-gray-600"
         )
     }
 

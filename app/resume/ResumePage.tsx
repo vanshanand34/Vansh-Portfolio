@@ -28,7 +28,8 @@ function ResumeComponent() {
 
                 <div className="flex justify-center items-center w-full py-12">
                     <button onClick={() => window.location.href = "api/resume"}
-                        className="rounded-lg border border-white hover:border-blue-600 md:text-3xl text-lg shadow-lg py-2 px-3">
+                        className="outline outline-1 outline-white hover:outline-none hover:bg-gray-800 
+                        rounded-lg md:text-3xl text-lg py-3 px-4">
                         Download Resume
                     </button>
                 </div>

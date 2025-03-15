@@ -28,7 +28,8 @@ function HomePageComponent() {
         </div>
 
         <div className="py-4 pb-24">
-          <button className="border border-white hover:border-blue-600 shadow-lg rounded-lg md:text-lg px-3 py-2">
+          <button className="outline outline-1 outline-white hover:outline-none hover:bg-[#343434] 
+          rounded-lg md:text-lg px-3 py-2">
             <Link href={"/about-me"}>
               About Me
             </Link>
@@ -36,7 +37,7 @@ function HomePageComponent() {
         </div>
 
 
-        <footer className="absolute bottom-6 flex justify-between items-center">
+        <footer className="absolute bottom-6 flex justify-between gap-x-8 sm:gap-x-24 md:gap-x-72 lg:gap-x-96 items-center">
           <div className="text-gray-400 md:text-md text-sm">
             Created By Vansh Anand
           </div>
