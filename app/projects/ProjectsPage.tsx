@@ -18,7 +18,7 @@ export default function ProjectPage() {
 function ProjectPageComponent() {
     return (
         <>
-            <div className="px-12 xs:px-18 sm:px-28 md:px-30 lg:px-48 xl:px-54 py-28  md:py-32">
+            <div className="px-12 xs:px-18 sm:px-28 md:px-[8vw] lg:px-40 xl:px-54 py-28  md:py-32">
 
                 <div className="text-center text-3xl md:text-5xl font-bold pb-8">Projects</div>
 
@@ -28,38 +28,44 @@ function ProjectPageComponent() {
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/typescript"
-                            projectName="Custom Select (Single/Mutli)"
-                            projectDescription="A custom select component built with TypeScript, designed to replace the standard HTML select element. It provides enhanced customization options, such as better styling, accessibility, and interactivity (e.g., search and multi-selection). The project showcases how TypeScript can be used to create reusable, type-safe UI components with improved user experience."
+                            projectName="Custom Select"
+                            projectDescription="A custom TypeScript-based select component replacing the standard HTML select, offering enhanced styling, accessibility features, and interactivity (such as search and multi-selection) for a better user experience."
+                            techStack={["Typescript", "CSS", "Reactjs"]}
                         />
 
                         <ProjectCard
                             projectName="Code Formatter"
                             projectLink="https://github.com/vanshanand34/code-formatter"
-                            projectDescription="A TypeScript-React-based project that utilizes the dprint JS module to automatically format code files. It supports formatting for various file types, including TypeScript, JavaScript, Python, HTML, and CSS. The tool helps developers maintain consistent code style by automating the formatting process, ensuring clean and readable code across different programming languages."
+                            projectDescription="A TypeScript-React project using the dprint JS module to automatically format TypeScript, JavaScript, Python, HTML, and CSS files, ensuring consistent code style and readability across different programming languages."
+                            techStack={["ReactJs", "ExpressJs", "Typescript", "Tailwind"]}
                         />
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/Shoppers-Edge"
                             projectName="Shoppers Edge"
-                            projectDescription="A price comparison website where you can search for the desired products and it will display the list of that product present on different E-commerce wesites with the available sort functions to sort the results by ratings,price."
+                            projectDescription="A price comparison website that allows users to search for products and compare prices across different e-commerce sites, with sorting options based on ratings, price, and other criteria."
+                            techStack={["Django", "Playwright", "Bootstrap"]}
                         />
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/stock_monitor"
                             projectName="Stock Monitor"
-                            projectDescription="An innovative React and Django application for creating and managing a Stock Wishlist providing information such as latest value and change . Leveraged Django-Rest-Framework for developing API endpoints for frontend to backend connectivity and TypeScript in frontend to inculcate strong typing."
+                            projectDescription="A React-Django app for managing a Stock Wishlist with real-time updates on stock value changes. It uses Django-Rest-Framework for API endpoints and TypeScript for strong typing in the frontend."
+                            techStack={["Reactjs", "MUI", "Django", "Typescript"]}
                         />
 
                         <ProjectCard
-                            projectLink="https://github.com/vanshanand34/REST-API-notes-app"
-                            projectName="REST API Notes Project"
-                            projectDescription="This project is a Django-based Notes App which contains different API endpoints developed using DRF(Django Rest Framework) It consists of API Endpoints for login , registering new users , logout and Performing CRUD operations on the notes."
+                            projectLink="https://github.com/vanshanand34/Notes-Project"
+                            projectName="Notes Project"
+                            projectDescription="A simple notes app using TypeScript, JavaScript, and React Bootstrap. It stores user data in localStorage, allowing for adding, editing, and deleting notes with a clean UI."
+                            techStack={["ReactJs", "Typescript", "React-Bootstrap"]}
                         />
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/Blogs"
                             projectName="Blog Website"
-                            projectDescription="A simple and sober blog website where users can create different blogs and view them with an attractive UI. It is developed using Django , Python , Bootstrap. Blogs are arranged in decreasing order of their time/date of creation. Latest blog created will be visible at the top of the webpage. It is a SPA (Single Page Application)."
+                            projectDescription="A blog website where users can create and view blogs in a single-page app, built with Django, Python, and Bootstrap. Blogs are displayed in reverse chronological order for easy navigation."
+                            techStack={["Django", "Python", "Bootstrap"]}
                         />
 
                     </div>
