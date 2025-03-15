@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* <div className="text-center w-full md:text-5xl text-5xl font-semibold mt-[6vh] text-blue-400 underline">About Me</div> */}
 
-        <div className="lg:block fixed top-[28vh] left-[3vw] hidden">
+        {/* <div className="lg:block fixed top-[28vh] left-[3vw] hidden">
           <div className="flex justify-between items-center py-4">
             <div className="lg:p-4 p-2 text-lg">
               <div className="py-4 cursor-pointer hover:ml-2">
@@ -46,59 +46,57 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="py-4 md:mr-32">
-          <div className="lg:mx-4 md:mx-6 mx-4 mt-12 p-4 lg:ml-[24vw]" id="intro">
-            <div className="md:mx-4 py-4">
+        <div className="px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32">
+          <div className="p-4 py-8 md:py-12" id="intro">
 
-              <div className="md:text-7xl text-5xl font-bold my-4">
+              <div className="md:text-7xl text-5xl font-bold">
                 Vansh Anand
               </div>
 
-              <div className="text-blue-300 md:text-3xl text-2xl py-2">
+              <div className="text-blue-300 md:text-3xl text-xl pt-2 md:py-6">
                 Full Stack Developer
               </div>
 
-              <LinkButtons />
+              <LinkButtons height={16} width={16}/>
 
-              <div className="md:font-semibold font-sans md:text-lg text-lg p-2">
+              <div className="md:font-semibold font-sans md:text-lg text-base">
                 Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
               </div>
 
-            </div>
           </div>
 
-          <div className="md:my-12 my-8 lg:mx-4 md:mx-6 mx-4 p-4 lg:ml-[24vw]" id="experience">
-            <div className="font-bold md:text-6xl text-4xl my-6 md:mx-4">
+          <div className="px-4 py-8 md:py-12" id="experience">
+            <div className="font-bold md:text-6xl text-4xl">
               Work Experience
             </div>
-            <div className="md:mx-5">
-              <div className="flex items-center justify-between gap-2">
-                <div className="font-bold lg:text-3xl md:text-2xl text-lg text-gray-300">
+            <div className="">
+              <div className="sm:flex items-center justify-between gap-2 py-2 md:py-6">
+                <div className="font-bold lg:text-3xl md:text-2xl text-base text-gray-300 py-1 sm:py-0">
                   Ayuvya Ayurveda
                 </div>
 
-                <div className="my-4 font-semibold md:text-md text-sm text-gray-400">
+                <div className="font-semibold md:text-md text-sm text-gray-400 py-2 sm:py-0">
                   JULY 2024 - JAN 2025
                 </div>
               </div>
 
-              <div className="md:text-lg font-semibold text-blue-400 px-1">
+              <div className="md:text-lg font-semibold text-blue-400 py-1">
                 Backend Developer Intern
               </div>
 
-              <ul className="font-sans marker:text-blue-300 list-disc list-inside py-4 md:text-lg text-md px-2 md:font-semibold">
-                <li className="py-2">
+              <ul className="pl-4 p-1 font-sans marker:text-blue-300 list-disc list-outside md:text-lg sm:text-base text-sm md:font-semibold">
+                <li className="md:p-1">
                   Developed and optimized Django backend and dashboard performance with efficient ORM queries.
                 </li>
-                <li className="py-2">
+                <li className="md:p-1">
                   Built and integrated RESTful APIs using Django Rest Framework (DRF) for seamless data exchange.
                 </li>
-                <li className="py-2">
+                <li className="md:p-1">
                   Implemented chat and audio call functionality using Agora services in Django.
                 </li>
-                <li className="py-2">
+                <li className="md:p-1">
                   Integrated seller APIs to enhance system capabilities.
                 </li>
               </ul>
@@ -106,14 +104,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:my-8 my-6 lg:mx-4 mx-6 p-4 lg:ml-[24vw]" id="education">
-            <div className="font-bold md:text-6xl text-4xl my-6 md:mx-4">
+          <div className="px-4 py-8" id="education">
+            <div className="font-bold md:text-6xl text-4xl">
               Education
             </div>
-            <div className="md:mx-5">
-              <div className="my-4">
-                <div className="flex items-center justify-between">
-                  <div className="py-4 font-bold lg:text-2xl md:text-xl text-md text-gray-300">
+            <div className="py-2 px-1">
+              <div className="py-1 md:py-2">
+                <div className="sm:flex items-center justify-between">
+                  <div className="font-bold lg:text-2xl md:text-xl text-md text-gray-300 py-2">
                     GTBIT (IPU)
                   </div>
 
@@ -122,13 +120,13 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="md:text-md text-sm font-semibold text-blue-400 px-1">
+                <div className="md:text-base text-xs font-semibold text-blue-400 py-2 sm:py-0">
                   B-TECH (IT)
                 </div>
               </div>
-              {/* <div className="my-4">
-                <div className="flex items-center justify-between">
-                  <div className="py-4 font-bold lg:text-2xl md:text-xl text-lg text-gray-300">
+              <div className="py-1 md:py-2">
+                <div className="sm:flex items-center justify-between">
+                  <div className="py-2 font-bold lg:text-2xl md:text-xl text-lg text-gray-300">
                     Kendriya Vidyalaya
                   </div>
 
@@ -137,10 +135,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="md:text-lg text-sm font-semibold text-blue-400 md:px-1">
+                <div className="md:text-base text-xs font-semibold text-blue-400 py-2 sm:py-0">
                   5-12TH
                 </div>
-              </div> */}
+              </div>
 
             </div>
           </div>
