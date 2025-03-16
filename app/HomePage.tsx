@@ -16,7 +16,7 @@ function HomePageComponent() {
     <>
       <div className="px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-28 pb-6 md:pt-44">
         <div className="text-4xl md:text-5xl lg:text-6xl text-gray-200 font-bold font-mono py-4 pt-8">
-          <div>Backend Developer</div>
+          <div>Full Stack Developer</div>
           <div>and Tech Enthusiast</div>
         </div>
 
