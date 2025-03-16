@@ -30,7 +30,7 @@ function AboutMe() {
 
           <LinkButtons height={16} width={16} />
 
-          <div className="md:font-semibold font-sans md:text-lg text-base pt-4 sm:pt-0">
+          <div className="md:font-medium font-mono md:text-lg xl:text-xl text-base pt-4 sm:pt-2">
             Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
           </div>
 
@@ -55,7 +55,7 @@ function AboutMe() {
               Backend Developer Intern
             </div>
 
-            <ul className="pl-4 p-1 font-sans marker:text-blue-300 list-disc list-outside md:text-lg sm:text-base text-sm md:font-semibold">
+            <ul className="p-1 font-mono marker:text-blue-300 list-disc list-outside xl:text-xl md:text-lg sm:text-base text-sm md:font-medium">
               <li className="md:p-1">
                 Developed and optimized Django backend and dashboard performance with efficient ORM queries.
               </li>

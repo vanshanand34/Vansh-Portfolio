@@ -31,14 +31,14 @@ export default function ProjectCard(
                 </Link>
             </div>
 
-            <div className="text-xs md:text-sm lg:text-base">
+            <div className="text-xs md:text-sm lg:text-base font-mono font-medium">
                 {projectDescription}
             </div>
             
-            <div className="flex justify-between items-center gap-x-1 gap-y-4 
+            <div className="flex justify-between items-center gap-x-1 gap-y-2
             p-1 pt-4 max-w-full flex-wrap flex-shrink">
                 {techStack?.map( (lang, index) =>
-                    <div className="bg-[#272727] p-1 px-3 rounded-lg text-xs" key={index}>
+                    <div className="bg-[#272727] p-0.5 px-1.5 sm:px-3 rounded-lg text-xs" key={index}>
                         {lang}
                     </div>
                 )}
