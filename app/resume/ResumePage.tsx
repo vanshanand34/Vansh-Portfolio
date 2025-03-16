@@ -15,7 +15,7 @@ export default function ResumePage() {
 function ResumeComponent() {
     return (
         <>
-            <div className="px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-48">
+            <div className="px-6 sm:px-16 md:px-42 lg:px-64 py-48">
 
                 <div className="w-full text-center md:text-6xl text-4xl font-semibold">
                     Download Resume
