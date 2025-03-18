@@ -7,6 +7,7 @@ import { BiAdjust } from "react-icons/bi";
 
 export default function ToggleButton() {
     const { systemTheme, theme, setTheme } = useTheme();
+    console.log(systemTheme);
 
     return (
         <>
