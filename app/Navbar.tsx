@@ -11,8 +11,8 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
     const getNavStyling = (currNavItem: string): string => {
         return (
             activeElement == currNavItem ?
-                "bg-gray-800 outline outline-1 outline-gray-600" :
-                "hover:bg-slate-900 hover:outline hover:outline-1 hover:outline-gray-600"
+                "dark:bg-gray-700 bg-sky-800 dark:outline outline-1 outline-gray-600 text-white" :
+                "dark:hover:bg-slate-900 hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-white"
         )
     }
 
@@ -28,10 +28,12 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
     return (
         <>
-            <div className="fixed text-white flex navbar justify-center font-sans font-semibold w-full p-2 py-4 z-10">
+            <div 
+                className="fixed text-white flex navbar justify-center 
+                font-sans font-semibold w-full p-2 py-4 z-10 ">
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
-                    <div className="bg-[#1b1b1baa] backdrop-blur-lg border border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-2 shadow-[1px_1px_5px_#1a1a1a] md:gap-4 gap-1">
+                    <div className="dark:bg-[#1b1b1baa] bg-[#40c0fbeb] dark:text-inherit text-gray-900 backdrop-blur-xl dark:border dark:border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-2 dark:shadow-[1px_1px_5px_#1a1a1a] shadow-lg md:gap-4 gap-1">
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
@@ -68,7 +70,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 </div >
             </div >
 
-            <div className="p-2 rounded-lg fixed top-[2vh] md:right-[3vw] right-0 sm:right-[1vw] text-white md:text-md text-xs" id="currTime">
+            <div className="p-2 rounded-lg fixed top-[2vh] md:right-[3vw] right-0 sm:right-[1vw] dark:text-white md:text-md text-xs" id="currTime">
                 {currTime?.toLocaleTimeString()}
             </div>
         </>
