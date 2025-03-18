@@ -23,7 +23,7 @@ export default function ProjectCard(
                 <Link href={projectLink}>
                     <div
                         className="text-lg sm:text-xl md:text-2xl font-semibold
-                        text-sky-600 hover:text-sky-700 dark:hover:text-blue-500 dark:text-sky-400"
+                        text-sky-600 hover:text-blue-800 dark:hover:text-blue-500 dark:text-sky-400"
                     >{projectName}</div>
                 </Link>
 
@@ -40,7 +40,7 @@ export default function ProjectCard(
             p-1 pt-4 max-w-full flex-wrap flex-shrink">
                 {techStack?.map((lang, index) =>
                     <div className="dark:bg-[#272727] dark:outline-none outline outline-1 outline-sky-500
-                    p-0.5 px-1.5 rounded-lg text-xs" key={index}>
+                    p-0.5 px-1.5 sm:px-3 sm:py-2 rounded-lg text-xs" key={index}>
                         {lang}
                     </div>
                 )}
