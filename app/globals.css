@@ -5,12 +5,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #242424;
+  --foreground: #141414;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0c0c0c;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer base{
+  body {
+      @apply dark:bg-gray-800 bg-white;
+      @apply dark:text-white text-black;
+  }
 }
