@@ -6,7 +6,7 @@ import ParentLayout from "../ParentLayout";
 export default function ProjectPage() {
     return (
         <ParentLayout
-            ChildComponent={<ProjectPageComponent />} 
+            ChildComponent={<ProjectPageComponent />}
             elementName="projects"
         />
     )
@@ -60,10 +60,10 @@ function ProjectPageComponent() {
                         />
 
                         <ProjectCard
-                            projectLink="https://github.com/vanshanand34/Blogs"
-                            projectName="Blog Website"
-                            projectDescription="A blog website where users can create and view blogs in a single-page app, built with Django, Python, and Bootstrap. Blogs are displayed in reverse chronological order for easy navigation."
-                            techStack={["Django", "Python", "Bootstrap"]}
+                            projectLink="https://github.com/vanshanand34/React-Projects/"
+                            projectName="Bookstore Website"
+                            projectDescription="A full-stack MERN application enabling users to create, edit, and delete books. It features a React frontend, Express.js backend, MongoDB database, and CRUD functionality."
+                            techStack={["MongoDB", "ExpressJS", "Reactjs", "Tailwind"]}
                         />
 
                     </div>
