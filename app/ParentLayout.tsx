@@ -15,7 +15,7 @@ export default function ParentLayout(
         <>
             <Navbar activeElement={elementName}></Navbar>
             <div
-                className="min-h-screen dark:text-white w-full dark:bg-[#181818] "
+                className="min-h-screen dark:text-white text-black w-full bg-white dark:bg-[#181818] "
                 id="container"
                 onMouseMove={(event: React.MouseEvent) => trackCursor(event)}
             >
