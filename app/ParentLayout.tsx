@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./ClientNavbar";
-import trackCursor from "./MovingBackground";
 import ToggleButton from "./components/toggleButton";
 
 type ParentLayoutProps = {
