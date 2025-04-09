@@ -23,7 +23,7 @@ function HomePageComponent() {
   function handleClick(e: React.MouseEvent) {
     const element: HTMLElement = e.target as HTMLElement;
     const dropdownElement = element.closest(".dropdown");
-    console.log(dropdownElement?.id);
+    // console.log(dropdownElement?.id);
     if (dropdownElement) {
       setOpenDropDownId(prev => dropdownElement.id == prev ? '' : dropdownElement.id);
     } else {
@@ -115,12 +115,12 @@ function SkillCard({
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
-    console.log(openDropdownId);
+    // console.log(openDropdownId);
     if (openDropdownId != id) {
       setIsCollapsed(true);
     } else {
       setIsCollapsed(prev => {
-        console.log(prev);
+        // console.log(prev);
         return !prev
       });
     }
@@ -128,14 +128,14 @@ function SkillCard({
 
   return (
     <div className="dropdown relative outline outline-1 outline-sky-500 dark:outline-sky-400 
-      shadow py-3 px-1 rounded-lg cursor-pointer" id={id} >
+      text-black dark:text-white shadow py-3 px-1 rounded-lg cursor-pointer" id={id} >
       <div
         className="p-2"
         defaultValue={skillType}
       >
 
         <div className="flex items-center justify-between">
-          <div className="text-sm sm:text-base md:text-lg px-4 text-white">{skillType}
+          <div className="text-sm sm:text-base md:text-lg px-4">{skillType}
           </div>
           <div className="px-4">
             <svg className={`w-2 h-2 text-gray-800 dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
@@ -143,8 +143,8 @@ function SkillCard({
             </svg>
           </div>
         </div>
-        <div className={`absolute z-10 w-[100%] top-[120%] left-0 bg-[#1d1d1d] shadow-[1px_1px_8px_#000000] 
-          rounded-md ${isCollapsed ? "hidden" : "block"}`}>
+        <div className={`absolute z-10 w-[100%] top-[120%] left-0 bg-white dark:bg-[#1d1d1d] 
+          text-gray-700 dark:text-white shadow-[1px_1px_8px_#000000] rounded-md ${isCollapsed ? "hidden" : "block"}`}>
           {
             skills.map(
               (skill, index) => (
