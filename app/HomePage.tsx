@@ -21,10 +21,11 @@ function HomePageComponent() {
   const [openDropdownId, setOpenDropDownId] = useState('');
 
   function handleClick(e: React.MouseEvent) {
-    const element = e.target.closest(".dropdown");
-    console.log(element?.id);
-    if (element) {
-      setOpenDropDownId(prev => element.id == prev ? '' : element.id);
+    const element: HTMLElement = e.target as HTMLElement;
+    const dropdownElement = element.closest(".dropdown");
+    console.log(dropdownElement?.id);
+    if (dropdownElement) {
+      setOpenDropDownId(prev => dropdownElement.id == prev ? '' : dropdownElement.id);
     } else {
       setOpenDropDownId('');
     }
@@ -54,7 +55,7 @@ function HomePageComponent() {
           </button>
         </div>
 
-        <div className="py-12 pb-48">
+        <div className="py-12 pb-48 pr-2 md:pr-0">
           <div className="py-4 pb-8 text-2xl sm:text-3xl md:text-5xl font-bold dark:text-gray-200 text-gray-800">
             Technical Skills
           </div>
@@ -134,7 +135,7 @@ function SkillCard({
       >
 
         <div className="flex items-center justify-between">
-          <div className="text-base md:text-lg px-4 text-white">{skillType}
+          <div className="text-sm sm:text-base md:text-lg px-4 text-white">{skillType}
           </div>
           <div className="px-4">
             <svg className={`w-2 h-2 text-gray-800 dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
