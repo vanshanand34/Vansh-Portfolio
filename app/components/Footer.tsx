@@ -3,9 +3,9 @@ import LinkButtons from "../LinkButtons"
 
 export default function Footer({ extracss = "" }: { extracss?: string }) {
     return (
-        <footer className={`flex justify-between gap-x-2 sm:gap-x-24 md:gap-x-72 lg:gap-x-96 items-center ${extracss}`}>
-            <div className="dark:text-gray-400 text-gray-600 md:text-md text-sm">
-                Created By Vansh Anand
+        <footer className={`flex justify-center gap-x-4 sm:gap-x-6 :gap-x-8 lg:gap-x-16 items-center ${extracss}`}>
+            <div className="dark:text-gray-400 text-gray-600 text-sm sm:text-md md:text-base">
+                © Vansh Anand
             </div>
 
             <div>

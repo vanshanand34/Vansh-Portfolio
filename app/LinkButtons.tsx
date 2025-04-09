@@ -53,7 +53,7 @@ export default function LinkButtons(
 
 function LinkButtonIcons({ width, height }: { width: number, height: number }) {
     return (
-        <div className="md:py-4 inline-flex items-center gap-x-1 sm:gap-x-3 flex-wrap">
+        <div className="md:py-4 inline-flex items-center gap-x-2 sm:gap-x-3 flex-wrap">
             <Link href="https://github.com/vanshanand34">
                 <button className="inline-flex items-center space-between hover:outline-none hover:bg-sky-400 hover:text-white dark:hover:bg-gray-700 dark:hover:text-inherit md:font-semibold p-1 sm:p-2 rounded-lg outline outline-1 dark:outline-white dark:hover:outline-none">
                     <GithubLogo width={width} height={height} />
