@@ -41,7 +41,7 @@ function HomePageComponent() {
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-xl text-base text-[#1d7ba3] text-bold  font-mono py-4">
+        <div className="md:text-xl text-base text-[#1d7ba3] dark:text-[#71b5d2] text-bold  font-mono py-4">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
@@ -115,12 +115,10 @@ function SkillCard({
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
-    // console.log(openDropdownId);
     if (openDropdownId != id) {
       setIsCollapsed(true);
     } else {
       setIsCollapsed(prev => {
-        // console.log(prev);
         return !prev
       });
     }
@@ -138,12 +136,12 @@ function SkillCard({
           <div className="text-sm sm:text-base md:text-lg px-4">{skillType}
           </div>
           <div className="px-4">
-            <svg className={`w-2 h-2 text-gray-800 dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+            <svg className={`w-2 h-2 text-gray-800 transition-all dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1" />
             </svg>
           </div>
         </div>
-        <div className={`absolute z-10 w-[100%] top-[120%] left-0 bg-white dark:bg-[#1d1d1d] 
+        <div className={`absolute z-10 w-[105%] top-[120%]  -left-1  bg-white dark:bg-[#1d1d1d] 
           text-gray-700 dark:text-white shadow-[1px_1px_8px_#000000] rounded-md ${isCollapsed ? "hidden" : "block"}`}>
           {
             skills.map(
