@@ -15,7 +15,7 @@ export default function LinkButtons(
                 <div className="md:py-4 inline-flex items-center gap-4 flex-wrap">
                     <Link href="https://github.com/vanshanand34">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300 
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300  outline-blue-600
                         hover:outline-none hover:bg-sky-400 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <GithubLogo width={width} height={height} />
@@ -26,7 +26,7 @@ export default function LinkButtons(
                     </Link>
                     <Link href="https://www.linkedin.com/in/anandvansh/">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300 
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300 outline-blue-600
                         hover:outline-none hover:bg-sky-400 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <LinkedinLogo width={width} height={height} />
@@ -37,7 +37,7 @@ export default function LinkButtons(
                     </Link>
                     <Link href="mailto:anandvansh34@gmail.com">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300 
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-300  outline-blue-600
                         hover:outline-none hover:bg-sky-400 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <GmailLogo width={width} height={height} />

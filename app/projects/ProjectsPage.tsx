@@ -22,27 +22,20 @@ function ProjectPageComponent() {
 
                 <div className="">
 
-                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-6">
+                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-8">
 
                         <ProjectCard
-                            projectLink="https://github.com/vanshanand34/typescript"
-                            projectName="Custom Select"
-                            projectDescription="A custom TypeScript-based select component replacing the standard HTML select, offering enhanced styling, accessibility features, and interactivity (such as search and multi-selection) for a better user experience."
-                            techStack={["Typescript", "CSS", "Reactjs"]}
-                        />
-
-                        <ProjectCard
-                            projectName="Code Formatter"
+                            projectName="Code Compiler"
                             projectLink="https://github.com/vanshanand34/code-formatter"
-                            projectDescription="A TypeScript-React project using the dprint JS module to automatically format TypeScript, JavaScript, Python, HTML, and CSS files, ensuring consistent code style and readability across different programming languages."
-                            techStack={["ReactJs", "ExpressJs", "Typescript", "Tailwind"]}
+                            projectDescription="A web-based application that enables users to write, edit and run code directly in their browser. It leverages react monaco-editor module and piston API to provide a fast and responsive coding experience."
+                            techStack={["ReactJs", "Chakra UI"]}
                         />
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/Shoppers-Edge"
-                            projectName="Shoppers Edge"
-                            projectDescription="A price comparison website that allows users to search for products and compare prices across different e-commerce sites, with sorting options based on ratings, price, and other criteria."
-                            techStack={["Django", "Playwright", "Bootstrap"]}
+                            projectName="Customers Edge"
+                            projectDescription="A Django-based price comparison website that scrapes real-time product listings from Amazon and Flipkart using Selenium. It delivers instant, dynamic search results with the help of Django Channels, making it easy to find the best deals quickly."
+                            techStack={["Django", "Selenium", "CSS", "JS", "Django Channels"]}
                         />
 
                         <ProjectCard
@@ -50,6 +43,13 @@ function ProjectPageComponent() {
                             projectName="Stock Monitor"
                             projectDescription="A React-Django app for managing a Stock Wishlist with real-time updates on stock value changes. It uses Django-Rest-Framework for API endpoints and TypeScript for strong typing in the frontend."
                             techStack={["Reactjs", "MUI", "Django", "Typescript"]}
+                        />
+
+                        <ProjectCard
+                            projectLink="https://github.com/vanshanand34/typescript"
+                            projectName="Custom Select"
+                            projectDescription="A custom TypeScript-based select component replacing the standard HTML select, offering enhanced styling, accessibility features, and interactivity (such as search and multi-selection) for a better user experience."
+                            techStack={["Typescript", "CSS", "Reactjs"]}
                         />
 
                         <ProjectCard
