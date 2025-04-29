@@ -38,7 +38,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 font-sans font-semibold w-full p-2 py-4 z-10">
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
-                    <div className="dark:bg-[#1b1b1baa] bg-[#7ad1f9eb] dark:text-inherit text-gray-900 dark:border dark:border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 dark:shadow-[1px_1px_5px_#1a1a1a] shadow-lg md:gap-4 gap-1 backdrop-blur-xl">
+                    <div className="dark:bg-[#1b1b1baa] bg-sky-400 dark:text-inherit text-gray-900 dark:border dark:border-blue-300 rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 dark:shadow-[1px_1px_5px_#1a1a1a] shadow-[1px_1px_5px_#000] md:gap-4 gap-1 dark:backdrop-blur-xl">
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
