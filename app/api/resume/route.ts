@@ -4,7 +4,7 @@ import path from "path";
 // import { readFile } from "fs/promises";
 import { NextResponse } from "next/server";
 
-const filePath = path.resolve('.', 'public', 'Vansh-Anand-Resume.pdf');
+const filePath = path.resolve('.', 'public', 'vansh-resume-april-latest.pdf');
 const imageBuffer = fs.readFileSync(filePath);
 // const pdfbuffer = await readFile(path.join(process.cwd(), "public/resume.pdf"));
 
