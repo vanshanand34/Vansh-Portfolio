@@ -41,13 +41,13 @@ function HomePageComponent() {
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-xl text-base text-sky-800 dark:text-[#71b5d2] text-bold  font-mono py-4">
+        <div className="md:text-xl text-base text-sky-700 dark:text-[#71b5d2] text-bold  font-mono py-4">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
         <div className="py-4 pb-20">
-          <button className="outline outline-1 dark:outline-sky-600 dark:hover:bg-[#343434]
-          outline-sky-500 hover:outline-none hover:bg-sky-400 hover:text-white dark:hover:outline-none
+          <button className="outline outline-1 dark:outline-sky-900 dark:hover:bg-[#343434]
+          outline-sky-500 hover:outline-none hover:bg-sky-700 hover:text-white dark:hover:outline-none
           rounded-lg md:text-lg px-3 py-2">
             <Link href={"/about-me"}>
               About Me

@@ -42,7 +42,7 @@ function AboutMe() {
           </div>
           <div className="">
             <div className="sm:flex items-center justify-between gap-2 py-2 md:py-6">
-              <div className="font-bold lg:text-3xl md:text-2xl text-base dark:text-blue-300 text-sky-500 py-1 sm:py-0">
+              <div className="font-bold lg:text-3xl md:text-2xl text-base dark:text-blue-300 text-sky-700 py-1 sm:py-0">
                 Ayuvya Ayurveda
               </div>
 
@@ -51,7 +51,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div className="md:text-xl font-semibold text-sky-400 py-1">
+            <div className="md:text-xl font-semibold text-sky-500 py-1">
               Backend Developer Intern
             </div>
 
@@ -89,7 +89,7 @@ function AboutMe() {
                 </div>
               </div>
 
-              <div className="md:text-base text-xs font-semibold text-blue-400 py-2 sm:py-0">
+              <div className="md:text-base text-xs font-semibold text-blue-500 py-2 sm:py-0">
                 B-TECH (IT)
               </div>
             </div>
@@ -104,7 +104,7 @@ function AboutMe() {
                 </div>
               </div>
 
-              <div className="md:text-base text-xs font-semibold text-blue-400 py-2 sm:py-0">
+              <div className="md:text-base text-xs font-semibold text-blue-500 py-2 sm:py-0">
                 5-12TH
               </div>
             </div>
