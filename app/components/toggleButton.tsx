@@ -15,7 +15,7 @@ export default function ToggleButton() {
                 onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
                 className='bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 
             transition-all duration-100 text-white dark:text-gray-800 
-            px-2 py-1 text-base sm:text-xl rounded-lg m-4 z-10 fixed top-2 left-2 sm:left-6'>
+            px-2 py-1 text-base sm:text-xl rounded-lg m-4 mt-6 z-10 fixed top-2 left-2 sm:left-6'>
                 <BiAdjust />
             </button >
             <div

@@ -18,11 +18,11 @@ function ProjectPageComponent() {
         <>
             <div className="px-12 xs:px-18 sm:px-28 md:px-[8vw] lg:px-40 xl:px-54 py-28  md:py-32">
 
-                <div className="text-center text-3xl md:text-5xl font-bold pb-8">Projects</div>
+                <div className="text-center text-3xl md:text-5xl font-bold pb-12 py-4">Projects</div>
 
                 <div className="">
 
-                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-8">
+                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-12">
 
                         <ProjectCard
                             projectName="Code Compiler"

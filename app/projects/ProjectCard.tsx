@@ -15,8 +15,8 @@ export default function ProjectCard(
 ) {
     return <>
         <div
-            className="rounded-lg tracking-tight border border-gray-400 shadow 
-            hover:shadow-lg  dark:hover:shadow-gray-700 p-3 px-4 md:p-4"
+            className="rounded-lg tracking-tight border dark:border-[#fff7] border-[#00000069] shadow 
+            hover:shadow-lg  dark:hover:shadow-gray-700 p-3 px-4 md:p-4 md:px-6 dark:bg-[#1b1b1b]"
         >
             <div className="flex justify-between items-center py-2 sm:py-4">
 
@@ -32,12 +32,12 @@ export default function ProjectCard(
                 </Link>
             </div>
 
-            <div className="text-sm md:text-base lg:text-lg font-mono">
+            <div className="text-xs md:text-sm lg:text-base font-mono">
                 {projectDescription}
             </div>
 
-            <div className="flex justify-between items-center gap-x-1 gap-y-2
-            p-1 pt-4 max-w-full flex-wrap flex-shrink font-mono">
+            <div className="flex justify-between items-center gap-x-1.5 gap-y-2
+            p-1 pt-6 max-w-full flex-wrap flex-shrink font-mono">
                 {techStack?.map((lang, index) =>
                     <div className="dark:bg-[#272727] dark:outline-none outline outline-1 outline-sky-500
                     p-0.5 px-1.5 sm:px-3 sm:py-2 rounded-lg text-xs" key={index}>
