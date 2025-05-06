@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 const geist = Geist({
   variable: "--font-geist",
+  subsets: ["latin"],
 })
 
 export default function HomePage() {
@@ -38,7 +39,7 @@ function HomePageComponent() {
 
   return (
     <>
-      <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-28 pb-6 md:pt-44`}
+      <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
         onClick={handleClick} >
         <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-bold sm:font-mono py-4 pt-8">
           <div>Full Stack Developer</div>

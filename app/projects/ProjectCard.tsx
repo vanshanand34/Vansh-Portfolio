@@ -12,6 +12,7 @@ type ProjectCardProps = {
 
 const geist = Geist({
     variable: "--font-geist",
+    subsets: ["latin"],
 })
 
 

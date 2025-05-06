@@ -16,6 +16,7 @@ export default function AboutMePage() {
 
 const geist = Geist({
   variable: "--font-geist",
+  subsets: ["latin"],
 })
 
 function AboutMe() {
@@ -23,7 +24,7 @@ function AboutMe() {
   return (
     <>
       <div className={` ${geist.className} sm:font-mono tracking-tight dark:tracking-normal px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32`}>
-        <div className="p-4 py-8 pt-10 md:py-16" id="intro">
+        <div className="p-4 py-8 pt-14 md:py-16" id="intro">
 
           <div className="md:text-7xl sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white">
             Vansh Anand
