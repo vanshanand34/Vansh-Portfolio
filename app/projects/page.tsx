@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Geist, Open_Sans } from "next/font/google";
+import { Geist } from "next/font/google";
 import ProjectPage from "./ProjectsPage";
 
 export const metadata: Metadata = {
