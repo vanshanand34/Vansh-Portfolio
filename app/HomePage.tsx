@@ -27,7 +27,7 @@ function HomePageComponent() {
   function handleClick(e: React.MouseEvent) {
     const element: HTMLElement = e.target as HTMLElement;
     const dropdownElement = element.closest(".dropdown");
-    // console.log(dropdownElement?.id);
+
     if (dropdownElement) {
       setOpenDropDownId(prev => dropdownElement.id == prev ? '' : dropdownElement.id);
     } else {
@@ -45,7 +45,7 @@ function HomePageComponent() {
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-xl text-base text-sky-700 dark:text-[#71b5d2] text-bold sm:font-mono py-4">
+        <div className="md:text-xl text-base text-sky-800 dark:text-[#71b5d2] text-bold sm:font-mono py-4">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
