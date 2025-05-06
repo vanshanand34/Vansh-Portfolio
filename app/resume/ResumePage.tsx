@@ -18,10 +18,10 @@ function ResumeComponent() {
             <div className="px-6 sm:px-16 md:px-42 lg:px-64 py-48">
 
                 <div className="w-full text-center md:text-6xl text-4xl font-semibold dark:text-white
-                text-blue-500">
+                text-gray-800">
                     Download Resume
                 </div>
-                <div className="text-center font-mono text-gray-400 py-4">
+                <div className="text-center font-mono text-blue-400 py-4">
                     Click on the below link to download resume
                 </div>
 

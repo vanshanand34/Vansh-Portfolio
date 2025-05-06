@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Geist } from "next/font/google";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
 type ProjectCardProps = {
@@ -9,20 +10,25 @@ type ProjectCardProps = {
 }
 
 
+const geist = Geist({
+    variable: "--font-geist",
+    subsets: ["latin"],
+})
+
 
 export default function ProjectCard(
     { projectName, projectDescription, projectLink, techStack }: ProjectCardProps
 ) {
     return <>
         <div
-            className="rounded-lg tracking-tight border dark:border-[#fff7] border-[#00000069] shadow 
-            hover:shadow-lg  dark:hover:shadow-gray-700 p-3 px-4 md:p-4 md:px-6 dark:bg-[#1b1b1b]"
+            className={`${geist.className} sm:font-mono rounded-lg tracking-tight border dark:border-[#fff7] border-[#00000069] shadow 
+            hover:shadow-lg  dark:hover:shadow-gray-700 p-3 px-4 md:p-4 md:px-6 dark:bg-[#1b1b1b]`}
         >
             <div className="flex justify-between items-center py-2 sm:py-4">
 
                 <Link href={projectLink}>
                     <div
-                        className="text-lg sm:text-xl md:text-2xl font-semibold
+                        className="sm:font-mono text-lg sm:text-xl md:text-2xl font-semibold
                         text-sky-600 hover:text-blue-800 dark:hover:text-blue-500 dark:text-sky-400"
                     >{projectName}</div>
                 </Link>
@@ -32,7 +38,7 @@ export default function ProjectCard(
                 </Link>
             </div>
 
-            <div className="text-xs md:text-sm lg:text-base font-mono">
+            <div className={`text-sm sm:font-mono md:text-sm lg:text-base`}>
                 {projectDescription}
             </div>
 

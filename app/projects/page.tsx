@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Geist } from "next/font/google";
 import ProjectPage from "./ProjectsPage";
 
 export const metadata: Metadata = {
@@ -7,13 +7,15 @@ export const metadata: Metadata = {
     description: "Portfolio of Vansh Anand",
 }
 
-const openSans = Open_Sans({
+const geist = Geist({
     variable: "--font-open-sans",
     subsets: ["latin"],
 })
 
+
+
 export default function Home() {
-    return <div className={`${openSans.className}`}>    
+    return <div className={`${geist.className}`}>    
         <ProjectPage/>
     </div>
 }

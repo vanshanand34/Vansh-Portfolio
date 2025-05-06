@@ -22,14 +22,13 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
     }
 
     useEffect(() => {
-        // console.log(document.readyState, typeof window);
         if (document?.readyState == "complete") changeTime();
     }, [])
 
     function changeTime() {
         setInterval((() => setCurrTime(new Date())), 1000);
     }
-    // document.onload = () => changeTime();
+
 
     return (
         <>
@@ -43,23 +42,26 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
-                                {/* home */}
-
                                 <MdHomeFilled className="text-base" />
+                                {/* Home */}
                             </div>
                         </Link>
 
                         <Link href={"/resume"}>
                             <div className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("resume")}`}>
                                 <LuBookMarked className="text-base" />
-                                <div className="hidden md:block px-1">Resume</div>
+                                <div className="hidden md:block px-1">
+                                    Resume
+                                </div>
                             </div>
                         </Link>
 
                         <Link href={"/projects"}>
                             <div className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("projects")}`}>
                                 <MdOutlineWindow className="text-lg" />
-                                <div className="hidden md:inline px-1">Projects</div>
+                                <div className="hidden md:inline px-1">
+                                    Projects
+                                </div>
                             </div>
                         </Link>
 
@@ -68,7 +70,9 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                                 className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("about-me")}`}
                             >
                                 <CgProfile className="text-lg" />
-                                <span className="hidden md:inline px-1">About Me</span>
+                                <span className="hidden md:inline px-1">
+                                    About Me
+                                </span>
                             </div>
                         </Link>
 
@@ -76,7 +80,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 </div >
             </div >
 
-            <div className="p-2 pt-4 rounded-lg fixed top-[2vh] md:right-[3vw] right-0 sm:right-[1vw] text-black dark:text-white md:text-base text-xs" id="currTime">
+            <div className="p-2 pt-6 md:pt-4 rounded-lg fixed top-[2vh] md:right-[3vw] right-0 sm:right-[1vw] text-black dark:text-white md:text-base text-xs" id="currTime">
                 {currTime?.toLocaleTimeString()}
             </div>
         </>

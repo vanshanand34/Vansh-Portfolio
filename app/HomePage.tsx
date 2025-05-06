@@ -3,8 +3,13 @@
 import Link from "next/link";
 import ParentLayout from "./ParentLayout";
 import Footer from "./components/Footer";
+import { Geist } from "next/font/google";
 import { useEffect, useState } from "react";
 
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
+})
 
 export default function HomePage() {
   return (
@@ -23,7 +28,7 @@ function HomePageComponent() {
   function handleClick(e: React.MouseEvent) {
     const element: HTMLElement = e.target as HTMLElement;
     const dropdownElement = element.closest(".dropdown");
-    // console.log(dropdownElement?.id);
+
     if (dropdownElement) {
       setOpenDropDownId(prev => dropdownElement.id == prev ? '' : dropdownElement.id);
     } else {
@@ -34,14 +39,14 @@ function HomePageComponent() {
 
   return (
     <>
-      <div className="px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-28 pb-6 md:pt-44"
+      <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
         onClick={handleClick} >
-        <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-bold font-mono py-4 pt-8">
+        <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-bold sm:font-mono py-4 pt-8">
           <div>Full Stack Developer</div>
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-xl text-base text-sky-800 dark:text-[#71b5d2] text-bold  font-mono py-4">
+        <div className="md:text-xl text-base text-sky-800 dark:text-[#71b5d2] text-bold sm:font-mono py-4">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
