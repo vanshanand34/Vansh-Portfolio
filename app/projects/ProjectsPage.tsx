@@ -25,10 +25,10 @@ function ProjectPageComponent() {
                     <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-12 sm:font-mono">
 
                         <ProjectCard
-                            projectName="Code Compiler"
-                            projectLink="https://github.com/vanshanand34/code-formatter"
-                            projectDescription="A web-based application that enables users to write, edit and run code directly in their browser. It leverages react monaco-editor module and piston API to provide a fast and responsive coding experience."
-                            techStack={["ReactJs", "Chakra UI"]}
+                            projectName="AI Code Reviewer"
+                            projectLink="https://github.com/vanshanand34/AI-Code-Review"
+                            projectDescription="A web-based code review tool built with Next.js, TypeScript, and Tailwind CSS. It lets users write and run code in the browser using Monaco Editor, with AI help for reviewing and improving code."
+                            techStack={["NextJs", "Tailwind CSS", "Typescript"]}
                         />
 
                         <ProjectCard
@@ -37,6 +37,21 @@ function ProjectPageComponent() {
                             projectDescription="A Django-based price comparison website that scrapes real-time product listings from Amazon and Flipkart using Selenium. It delivers instant, dynamic search results with the help of Django Channels, making it easy to find the best deals quickly."
                             techStack={["Django", "Selenium", "CSS", "JS", "Django Channels"]}
                         />
+
+                        <ProjectCard
+                            projectName="Code Compiler"
+                            projectLink="https://github.com/vanshanand34/code-formatter"
+                            projectDescription="A web-based application that enables users to write, edit and run code directly in their browser. It leverages react monaco-editor module and piston API to provide a fast and responsive coding experience."
+                            techStack={["ReactJs", "Chakra UI"]}
+                        />
+
+                        <ProjectCard
+                            projectName="HTTP Server"
+                            projectLink="https://github.com/vanshanand34/Javascript-Http-Server"
+                            projectDescription="An HTTP server build using Javascript. It is capable of handling simple HTTP requests using the Javascript net module."
+                            techStack={["Javascript"]}
+                        />
+
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/stock_monitor"
