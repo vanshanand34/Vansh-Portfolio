@@ -4,7 +4,8 @@ import Link from "next/link";
 import ParentLayout from "./ParentLayout";
 import Footer from "./components/Footer";
 import { Geist } from "next/font/google";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
+import { SkillCard } from "./components/SkillsCard";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -102,64 +103,3 @@ function HomePageComponent() {
   );
 }
 
-
-function SkillCard({
-  skills,
-  skillType,
-  id,
-  openDropdownId,
-}:
-  {
-    skills: string[],
-    skillType: string,
-    id: string,
-    openDropdownId: string,
-  }
-) {
-
-  const [isCollapsed, setIsCollapsed] = useState(true);
-
-  useEffect(() => {
-    if (openDropdownId != id) {
-      setIsCollapsed(true);
-    } else {
-      setIsCollapsed(prev => {
-        return !prev
-      });
-    }
-  }, [openDropdownId])
-
-  return (
-    <div className="dropdown relative outline outline-1 outline-sky-500 dark:outline-sky-400 
-      text-black dark:text-white shadow py-3 px-1 rounded-lg cursor-pointer" id={id} >
-      <div
-        className="p-2"
-        defaultValue={skillType}
-      >
-
-        <div className="flex items-center justify-between">
-          <div className="text-sm sm:text-base md:text-lg px-4">{skillType}
-          </div>
-          <div className="px-4">
-            <svg className={`w-2 h-2 text-gray-800 transition-all dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1" />
-            </svg>
-          </div>
-        </div>
-        <div className={`absolute z-10 w-[105%] top-[120%]  -left-1  bg-white dark:bg-[#1d1d1d] 
-          text-gray-700 dark:text-white shadow-[1px_1px_8px_#000000] rounded-md ${isCollapsed ? "hidden" : "block"}`}>
-          {
-            skills.map(
-              (skill, index) => (
-                <div key={index} className="px-2 py-2">
-                  {skill}
-                </div>
-              )
-            )
-          }
-        </div>
-      </div>
-    </div>
-  )
-
-}

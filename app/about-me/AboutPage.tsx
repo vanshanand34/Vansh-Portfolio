@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import LinkButtons from "../LinkButtons";
+import LinkButtons from "../components/LinkButtons";
 import ParentLayout from "../ParentLayout";
 import { Geist } from "next/font/google";
 

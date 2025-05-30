@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./ClientNavbar";
+import Navbar from "./components/ClientNavbar";
 import ToggleButton from "./components/toggleButton";
 
 type ParentLayoutProps = {
