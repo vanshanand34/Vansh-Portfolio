@@ -17,7 +17,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
         return (
             activeElement == currNavItem ?
                 "dark:bg-[#2d2d2d] bg-sky-800 dark:outline outline-1 outline-blue-800 dark:outline-0 text-white" :
-                "dark:hover:bg-[#2d2d2d] dark:outline-0 outline outline-1 outline-[#0000004d] hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-white"
+                "dark:hover:bg-[#2d2d2d] dark:outline-0 outline outline-1 outline-[#0000002a] hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-white"
         )
     }
 
@@ -34,7 +34,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
         <>
             <div
                 className="fixed text-white flex navbar justify-center
-                font-sans font-semibold w-full p-2 py-4 pt-6 z-10">
+                font-sans font-semibold w-full p-2 py-4 pt-6 z-20">
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
                     <div className="dark:bg-[#1e1e1eaa] bg-sky-400 dark:text-inherit text-gray-800

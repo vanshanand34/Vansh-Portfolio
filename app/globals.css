@@ -15,6 +15,20 @@
   }
 }
 
+@keyframes jump-in {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1
+  }
+}
+
+.skills-card {
+  animation: jump-in 0.3s ease-in-out 1;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -25,9 +39,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@layer base{
+@layer base {
   body {
-      @apply dark:bg-gray-800 bg-white;
-      @apply dark:text-white text-black;
+    @apply dark:bg-gray-800 bg-white;
+    @apply dark:text-white text-black;
   }
 }

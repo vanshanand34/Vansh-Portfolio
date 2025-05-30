@@ -1,5 +1,5 @@
 import React from "react"
-import LinkButtons from "../LinkButtons"
+import LinkButtons from "./LinkButtons"
 
 export default function Footer({ extracss = "" }: { extracss?: string }) {
     return (

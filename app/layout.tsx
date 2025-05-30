@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute={"class"}>{children}</ThemeProvider>
+        <ThemeProvider attribute={"class"} defaultTheme="dark" >{children}</ThemeProvider>
       </body>
     </html>
   );
