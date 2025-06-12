@@ -3,7 +3,7 @@
 import React from "react";
 import LinkButtons from "../components/LinkButtons";
 import ParentLayout from "../ParentLayout";
-import { Geist } from "next/font/google";
+import ExperienceSection from "./components/Experience";
 
 export default function AboutMePage() {
   return (
@@ -14,19 +14,21 @@ export default function AboutMePage() {
   )
 }
 
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-})
-
 function AboutMe() {
+
+  const experiencePointsList = [
+    "Developed and optimized Django backend and dashboard performance with efficient ORM queries.",
+    "Built and integrated RESTful APIs using Django Rest Framework (DRF) for seamless data exchange.",
+    "Implemented chat and audio call functionality using Agora services in Django.",
+    "Integrated seller APIs to enhance system capabilities."
+  ]
 
   return (
     <>
-      <div className={` ${geist.className} sm:font-mono tracking-tight dark:tracking-normal px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32`}>
-        <div className="p-4 py-8 pt-14 md:py-16" id="intro">
+      <div className="font-mono tracking-tight dark:tracking-normal px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32">
+        <div className="p-4 py-8 md:py-16" id="intro">
 
-          <div className="md:text-7xl sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white">
+          <div className="md:text-7xl text-5xl font-bold text-gray-800 dark:text-white">
             Vansh Anand
           </div>
 
@@ -36,49 +38,13 @@ function AboutMe() {
 
           <LinkButtons height={16} width={16} />
 
-          <div className="md:font-medium sm:font-mono text-gray-800 dark:text-white 
-          xl:text-xl md:text-lg sm:text-base text-sm pt-4 sm:pt-2">
+          <div className="md:font-medium  font-mono text-gray-800 dark:text-white md:text-lg xl:text-xl text-base pt-4 sm:pt-2">
             Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
           </div>
 
         </div>
 
-        <div className="px-4 py-8 md:py-16" id="experience">
-          <div className="font-bold md:text-6xl text-3xl text-gray-800 dark:text-inherit">
-            Work Experience
-          </div>
-          <div className="">
-            <div className="flex items-center justify-between gap-2 py-1 pt-4 md:py-6">
-              <div className="font-bold lg:text-3xl md:text-2xl text-base dark:text-blue-300 text-sky-700 py-1 sm:py-0">
-                Ayuvya Ayurveda
-              </div>
-
-              <div className="font-semibold md:text-lg sm:text-base text-xs dark:text-gray-400 text-gray-500 py-2 sm:py-0">
-                JULY 2024 - JAN 2025
-              </div>
-            </div>
-
-            <div className="md:text-xl font-semibold text-sky-600 py-1">
-              Backend Developer Intern
-            </div>
-
-            <ul className="p-1 sm:font-mono marker:text-blue-500 list-disc list-outside xl:text-lg md:text-lg sm:text-base text-sm md:font-medium dark:text-white">
-              <li className="py-1 md:p-1">
-                Developed and optimized Django backend and dashboard performance with efficient ORM queries.
-              </li>
-              <li className="py-1 md:p-1">
-                Built and integrated RESTful APIs using Django Rest Framework (DRF) for seamless data exchange.
-              </li>
-              <li className="py-1 md:p-1">
-                Implemented chat and audio call functionality using Agora services in Django.
-              </li>
-              <li className="py-1 md:p-1">
-                Integrated seller APIs to enhance system capabilities.
-              </li>
-            </ul>
-
-          </div>
-        </div>
+        <ExperienceSection experiencePoints={experiencePointsList}/>
 
         <div className="px-4 py-8" id="education">
           <div className="font-bold md:text-6xl text-4xl dark:text-inherit text-gray-800">
