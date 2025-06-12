@@ -17,7 +17,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
         return (
             activeElement == currNavItem ?
                 "dark:bg-[#2d2d2d] bg-sky-800 dark:outline outline-1 outline-blue-800 dark:outline-0 text-white" :
-                "dark:hover:bg-[#2d2d2d] dark:outline-0 outline outline-1 outline-[#0000002a] hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-white"
+                "dark:hover:bg-[#2d2d2d] dark:outline-0 outline outline-1 outline-[#0000002a] hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-blue-400"
         )
     }
 
@@ -37,8 +37,8 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 font-sans font-semibold w-full p-2 py-4 pt-6 z-20">
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
-                    <div className="dark:bg-[#1e1e1eaa] bg-sky-400 dark:text-inherit text-gray-800
-                     dark:border dark:border-[#325bffa3] rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 dark:shadow-[1px_1px_5px_#fff1] shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 dark:backdrop-blur-xl">
+                    <div className="dark:bg-[#1e1e1e] bg-white dark:text-inherit text-gray-800
+                     dark:border dark:border-[#325bffa3] rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 dark:shadow-[1px_1px_5px_#fff1] shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 backdrop-blur-xl">
 
                         <Link href={"/"}>
                             <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
