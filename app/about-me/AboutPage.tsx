@@ -4,16 +4,21 @@ import React from "react";
 import LinkButtons from "../components/LinkButtons";
 import ParentLayout from "../ParentLayout";
 import ExperienceSection from "./components/Experience";
+import { Geist } from "next/font/google";
 
 export default function AboutMePage() {
   return (
-    <ParentLayout 
-      ChildComponent={<AboutMe />} 
+    <ParentLayout
+      ChildComponent={<AboutMe />}
       elementName="about-me"
     />
   )
 }
 
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
+})
 function AboutMe() {
 
   const experiencePointsList = [
@@ -25,10 +30,10 @@ function AboutMe() {
 
   return (
     <>
-      <div className="font-mono tracking-tight dark:tracking-normal px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32">
-        <div className="p-4 py-8 md:py-16" id="intro">
+      <div className={` ${geist.className} sm:font-mono tracking-tight dark:tracking-normal px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32`}>
+        <div className="p-4 py-8 pt-14 md:py-16" id="intro">
 
-          <div className="md:text-7xl text-5xl font-bold text-gray-800 dark:text-white">
+          <div className="md:text-7xl sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white">
             Vansh Anand
           </div>
 
@@ -38,13 +43,14 @@ function AboutMe() {
 
           <LinkButtons height={16} width={16} />
 
-          <div className="md:font-medium  font-mono text-gray-800 dark:text-white md:text-lg xl:text-xl text-base pt-4 sm:pt-2">
+          <div className="md:font-medium sm:font-mono text-gray-800 dark:text-white 
+          xl:text-xl md:text-lg sm:text-base text-sm pt-4 sm:pt-2">
             Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
           </div>
 
         </div>
 
-        <ExperienceSection experiencePoints={experiencePointsList}/>
+        <ExperienceSection experiencePoints={experiencePointsList} />
 
         <div className="px-4 py-8" id="education">
           <div className="font-bold md:text-6xl text-4xl dark:text-inherit text-gray-800">

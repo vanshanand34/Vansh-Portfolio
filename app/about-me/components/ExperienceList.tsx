@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ExperienceList({ experiencePoints }: { experiencePoints: string[] }) {
     return (
-        <ul className="p-1 font-mono marker:text-blue-300 list-disc list-inside 
-                xl:text-lg md:text-lg sm:text-base md:font-medium dark:text-white">
+        <ul className="p-1 sm:font-mono marker:text-blue-300 list-disc list-inside 
+                xl:text-lg md:text-base sm:text-base text-sm md:font-medium dark:text-white">
             {
                 experiencePoints.map(
                     (experiencePoint, index) =>
@@ -15,5 +15,5 @@ export default function ExperienceList({ experiencePoints }: { experiencePoints:
 
 
 function ExperinceListItem({ item }: { item: string }) {
-    return <li className="md:py-1">{item}</li>
+    return <li className="py-1">{item}</li>
 }
