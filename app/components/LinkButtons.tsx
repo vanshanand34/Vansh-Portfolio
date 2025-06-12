@@ -19,7 +19,7 @@ export default function LinkButtons(
                         hover:outline-none hover:bg-sky-600 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <GithubLogo width={width} height={height} />
-                            <div className="text-sm md:block hidden">
+                            <div className="text-sm md:text-base md:block hidden">
                                 Github
                             </div>
                         </button>
@@ -30,7 +30,7 @@ export default function LinkButtons(
                         hover:outline-none hover:bg-sky-600 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <LinkedinLogo width={width} height={height} />
-                            <div className="text-sm md:block hidden">
+                            <div className="text-sm md:text-base md:block hidden">
                                 LinkedIn
                             </div>
                         </button>
@@ -41,7 +41,7 @@ export default function LinkButtons(
                         hover:outline-none hover:bg-sky-600 hover:text-white
                         dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
                             <GmailLogo width={width} height={height} />
-                            <div className="text-sm md:block hidden">
+                            <div className="text-sm md:text-base md:block hidden">
                                 Email
                             </div>
                         </button>

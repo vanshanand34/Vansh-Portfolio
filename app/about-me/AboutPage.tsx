@@ -3,12 +3,13 @@
 import React from "react";
 import LinkButtons from "../components/LinkButtons";
 import ParentLayout from "../ParentLayout";
+import ExperienceSection from "./components/Experience";
 import { Geist } from "next/font/google";
 
 export default function AboutMePage() {
   return (
-    <ParentLayout 
-      ChildComponent={<AboutMe />} 
+    <ParentLayout
+      ChildComponent={<AboutMe />}
       elementName="about-me"
     />
   )
@@ -18,8 +19,14 @@ const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
 })
-
 function AboutMe() {
+
+  const experiencePointsList = [
+    "Developed and optimized Django backend and dashboard performance with efficient ORM queries.",
+    "Built and integrated RESTful APIs using Django Rest Framework (DRF) for seamless data exchange.",
+    "Implemented chat and audio call functionality using Agora services in Django.",
+    "Integrated seller APIs to enhance system capabilities."
+  ]
 
   return (
     <>
@@ -43,42 +50,7 @@ function AboutMe() {
 
         </div>
 
-        <div className="px-4 py-8 md:py-16" id="experience">
-          <div className="font-bold md:text-6xl text-3xl text-gray-800 dark:text-inherit">
-            Work Experience
-          </div>
-          <div className="">
-            <div className="flex items-center justify-between gap-2 py-1 pt-4 md:py-6">
-              <div className="font-bold lg:text-3xl md:text-2xl text-base dark:text-blue-300 text-sky-700 py-1 sm:py-0">
-                Ayuvya Ayurveda
-              </div>
-
-              <div className="font-semibold md:text-lg sm:text-base text-xs dark:text-gray-400 text-gray-500 py-2 sm:py-0">
-                JULY 2024 - JAN 2025
-              </div>
-            </div>
-
-            <div className="md:text-xl font-semibold text-sky-600 py-1">
-              Backend Developer Intern
-            </div>
-
-            <ul className="p-1 sm:font-mono marker:text-blue-500 list-disc list-outside xl:text-lg md:text-lg sm:text-base text-sm md:font-medium dark:text-white">
-              <li className="py-1 md:p-1">
-                Developed and optimized Django backend and dashboard performance with efficient ORM queries.
-              </li>
-              <li className="py-1 md:p-1">
-                Built and integrated RESTful APIs using Django Rest Framework (DRF) for seamless data exchange.
-              </li>
-              <li className="py-1 md:p-1">
-                Implemented chat and audio call functionality using Agora services in Django.
-              </li>
-              <li className="py-1 md:p-1">
-                Integrated seller APIs to enhance system capabilities.
-              </li>
-            </ul>
-
-          </div>
-        </div>
+        <ExperienceSection experiencePoints={experiencePointsList} />
 
         <div className="px-4 py-8" id="education">
           <div className="font-bold md:text-6xl text-4xl dark:text-inherit text-gray-800">
