@@ -44,7 +44,7 @@ function AboutMe() {
           <LinkButtons height={16} width={16} />
 
           <div className="md:font-medium sm:font-mono text-gray-800 dark:text-white 
-          xl:text-xl md:text-lg sm:text-base text-sm pt-4 sm:pt-2">
+          xl:text-xl md:text-lg text-base pt-4 sm:pt-2">
             Vansh Anand is a full stack engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
           </div>
 
@@ -58,8 +58,8 @@ function AboutMe() {
           </div>
           <div className="py-2 px-1">
             <div className="py-1 md:py-2">
-              <div className="sm:flex items-center justify-between">
-                <div className="font-bold lg:text-2xl md:text-xl text-md dark:text-gray-300 text-gray-600 py-2">
+              <div className="flex items-center justify-between">
+                <div className="font-bold lg:text-2xl md:text-xl text-base dark:text-gray-300 text-gray-600 py-2">
                   GTBIT (IPU)
                 </div>
 
@@ -73,12 +73,12 @@ function AboutMe() {
               </div>
             </div>
             <div className="py-1 md:py-2">
-              <div className="sm:flex items-center justify-between">
-                <div className="py-2 font-bold lg:text-2xl md:text-xl text-lg dark:text-gray-300 text-gray-600">
-                  Kendriya Vidyalaya
+              <div className="flex items-center justify-between">
+                <div className="py-2 font-bold lg:text-2xl md:text-xl text-base dark:text-gray-300 text-gray-600">
+                  K.V.S
                 </div>
 
-                <div className="font-semibold md:text-lg text-sm dark:text-gray-400 text-gray-500">
+                <div className="font-medium md:text-lg text-sm dark:text-gray-400 text-gray-500">
                   JUNE 2014 - AUG 2022
                 </div>
               </div>
