@@ -8,7 +8,7 @@ export default function ExperienceSection( {experiencePoints} : {experiencePoint
                 Work Experience
             </div>
             <div className="">
-                <div className="sm:flex items-center justify-between sm:gap-2 py-2 md:py-6">
+                <div className="flex items-center justify-between sm:gap-2 py-2 md:py-6">
                     <div className="font-bold lg:text-3xl md:text-2xl text-bsase dark:text-blue-300
                      text-sky-700 py-1 sm:py-0">
                         Ayuvya Ayurveda
