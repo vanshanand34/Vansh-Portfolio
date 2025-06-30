@@ -42,12 +42,12 @@ function HomePageComponent() {
     <>
       <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
         onClick={handleClick} >
-        <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-bold sm:font-mono py-4 pt-8">
+        <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-semibold py-4 pt-8">
           <div>Full Stack Developer</div>
           <div>and Tech Enthusiast</div>
         </div>
 
-        <div className="md:text-xl text-base sm:text-lg  text-sky-800 dark:text-[#71b5d2] text-bold sm:font-mono py-4">
+        <div className="md:text-xl text-base sm:text-lg  text-sky-800 dark:text-[#71b5d2] font-normal py-4">
           I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 

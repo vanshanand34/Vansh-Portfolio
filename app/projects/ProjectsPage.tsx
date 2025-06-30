@@ -22,7 +22,7 @@ function ProjectPageComponent() {
 
                 <div className="">
 
-                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-12 sm:font-mono">
+                    <div className="grid md:grid-cols-2 grid-cols-1 py-4 gap-12">
 
                         <ProjectCard
                             projectName="AI Code Reviewer"
