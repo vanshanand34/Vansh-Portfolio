@@ -15,9 +15,9 @@ export default function LinkButtons(
                 <div className="md:py-4 inline-flex items-center gap-4 flex-wrap">
                     <Link href="https://github.com/vanshanand34">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-500  outline-blue-600
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-[#3b83f6c6] outline-[#3b83f6d4]
                         hover:outline-none hover:bg-sky-600 hover:text-white
-                        dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
+                        dark:hover:outline-none dark:hover:bg-[#343434] text-[#393939] dark:text-white">
                             <GithubLogo width={width} height={height} />
                             <div className="text-sm md:text-base md:block hidden">
                                 Github
@@ -26,9 +26,9 @@ export default function LinkButtons(
                     </Link>
                     <Link href="https://www.linkedin.com/in/anandvansh/">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-500 outline-blue-600
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-[#3b83f6c6] outline-[#3b83f6d4]
                         hover:outline-none hover:bg-sky-600 hover:text-white
-                        dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
+                        dark:hover:outline-none dark:hover:bg-[#343434] text-[#393939] dark:text-white">
                             <LinkedinLogo width={width} height={height} />
                             <div className="text-sm md:text-base md:block hidden">
                                 LinkedIn
@@ -37,9 +37,9 @@ export default function LinkButtons(
                     </Link>
                     <Link href="mailto:anandvansh34@gmail.com">
                         <button className="inline-flex items-center justify-between
-                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-blue-500  outline-blue-600
+                        py-2 px-2 md:px-4 rounded-lg outline outline-1 dark:outline-[#3b83f6c6] outline-[#3b83f6d4]
                         hover:outline-none hover:bg-sky-600 hover:text-white
-                        dark:hover:outline-none dark:hover:bg-[#343434] dark:text-inherit">
+                        dark:hover:outline-none dark:hover:bg-[#343434] text-[#393939] dark:text-white">
                             <GmailLogo width={width} height={height} />
                             <div className="text-sm md:text-base md:block hidden">
                                 Email
@@ -52,22 +52,24 @@ export default function LinkButtons(
 }
 
 function LinkButtonIcons({ width, height }: { width: number, height: number }) {
+
+    const linkStyles = "inline-flex items-center space-between hover:outline-none hover:bg-sky-500 hover:text-white dark:hover:bg-gray-700 dark:hover:text-inherit md:font-semibold p-1 sm:p-2 rounded-lg outline outline-1 outline-[#1e1e1e] dark:outline-white dark:hover:outline-none text-[#3c3c3c]";
     return (
         <div className="md:py-4 inline-flex items-center gap-x-2 sm:gap-x-3 flex-wrap">
             <Link href="https://github.com/vanshanand34">
-                <button className="inline-flex items-center space-between hover:outline-none hover:bg-sky-500 hover:text-white dark:hover:bg-gray-700 dark:hover:text-inherit md:font-semibold p-1 sm:p-2 rounded-lg outline outline-1 dark:outline-white dark:hover:outline-none">
+                <div className={`${linkStyles}`}>
                     <GithubLogo width={width} height={height} />
-                </button>
+                </div>
             </Link>
             <Link href="https://www.linkedin.com/in/anandvansh/">
-                <button className="inline-flex items-center space-between hover:outline-none hover:bg-sky-500 hover:text-white dark:hover:bg-gray-700 dark:hover:text-inherit md:font-semibold p-1 sm:p-2 rounded-lg outline outline-1 dark:outline-white dark:hover:outline-none">
+                <div className={`${linkStyles}`}>
                     <LinkedinLogo width={width} height={height} />
-                </button>
+                </div>
             </Link>
             <Link href="mailto:anandvansh34@gmail.com">
-                <button className="inline-flex items-center space-between hover:outline-none hover:bg-sky-500 hover:text-white dark:hover:bg-gray-700 dark:hover:text-inherit md:font-semibold p-1 sm:p-2 rounded-lg outline outline-1 dark:outline-white dark:hover:outline-none">
+                <div className={`${linkStyles}`}>
                     <GmailLogo width={width} height={height} />
-                </button>
+                </div>
             </Link>
         </div>
 

@@ -6,6 +6,12 @@ import { MdHomeFilled } from "react-icons/md";
 import { LuBookMarked } from "react-icons/lu";
 import { MdOutlineWindow } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { Assistant } from "next/font/google";
+
+const assistant = Assistant({
+    weight: "500",
+    subsets: ["latin"],
+})
 
 
 export default function ResponsiveNavbar({ activeElement }: { activeElement: string }):
@@ -16,10 +22,12 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
     const getNavStyling = (currNavItem: string): string => {
         return (
             activeElement == currNavItem ?
-                "dark:bg-[#2d2d2d] bg-sky-800 dark:outline outline-1 outline-blue-800 dark:outline-0 text-white" :
-                "dark:hover:bg-[#2d2d2d] dark:outline-0 outline outline-1 outline-[#0000002a] hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-blue-400"
+                "dark:bg-[#2d2d2d] bg-sky-700 dark:outline outline-1 outline-blue-800 dark:outline-0 text-white" :
+                "dark:hover:bg-[#2d2d2d] dark:outline-0  hover:outline hover:outline-1 dark:hover:outline-gray-600 hover:outline-blue-400"
         )
     }
+
+    const NavComponentStyle = "py-1 px-2 rounded-2xl cursor-pointer";
 
     useEffect(() => {
         if (document?.readyState == "complete") changeTime();
@@ -33,22 +41,22 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
     return (
         <>
             <div
-                className="fixed text-white flex navbar justify-center
-                font-sans font-semibold w-full p-2 py-4 pt-6 z-20">
+                className={`fixed text-white flex navbar justify-center 
+                font-bold w-full p-2 py-4 pt-6 z-20 ${assistant.className}`}>
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
                     <div className="dark:bg-[#1e1e1e] bg-white dark:text-inherit text-gray-800
-                     dark:border dark:border-[#325bffa3] rounded-xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 dark:shadow-[1px_1px_5px_#fff1] shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 backdrop-blur-xl">
+                     dark:border dark:border-[#325bffa3] rounded-3xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 md:px-5 dark:shadow-[1px_1px_5px_#fff1] shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 backdrop-blur-xl">
 
                         <Link href={"/"}>
-                            <div className={`py-1 px-2 rounded-lg cursor-pointer ${getNavStyling("home")}`}>
+                            <div className={`${NavComponentStyle} ${getNavStyling("home")}`}>
                                 <MdHomeFilled className="text-base" />
                                 {/* Home */}
                             </div>
                         </Link>
 
                         <Link href={"/resume"}>
-                            <div className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("resume")}`}>
+                            <div className={`flex items-center ${NavComponentStyle} text-nowrap ${getNavStyling("resume")}`}>
                                 <LuBookMarked className="text-base" />
                                 <div className="hidden md:block px-1">
                                     Resume
@@ -57,7 +65,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                         </Link>
 
                         <Link href={"/projects"}>
-                            <div className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("projects")}`}>
+                            <div className={`flex items-center ${NavComponentStyle} text-nowrap ${getNavStyling("projects")}`}>
                                 <MdOutlineWindow className="text-lg" />
                                 <div className="hidden md:inline px-1">
                                     Projects
@@ -67,7 +75,7 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
 
                         <Link href={"/about-me/"}>
                             <div
-                                className={`flex items-center py-1 px-2 rounded-lg cursor-pointer text-nowrap ${getNavStyling("about-me")}`}
+                                className={`flex items-center ${NavComponentStyle} text-nowrap ${getNavStyling("about-me")}`}
                             >
                                 <CgProfile className="text-lg" />
                                 <span className="hidden md:inline px-1">

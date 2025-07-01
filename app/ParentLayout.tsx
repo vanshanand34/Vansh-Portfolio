@@ -1,11 +1,18 @@
 import React from "react";
 import Navbar from "./components/ClientNavbar";
 import ToggleButton from "./components/toggleButton";
+import { Assistant } from "next/font/google";
+import "./globals.css";
 
 type ParentLayoutProps = {
     ChildComponent: React.ReactNode,
     elementName: string
 }
+
+const assistant = Assistant({
+    weight: "500",
+    subsets: ["latin"],
+})
 
 export default function ParentLayout(
     { ChildComponent, elementName }: ParentLayoutProps
@@ -14,17 +21,10 @@ export default function ParentLayout(
         <>
             <Navbar activeElement={elementName}></Navbar>
             <div
-                className="min-h-screen dark:text-white text-black w-full bg-white dark:bg-[#121212] "
+                className={`${assistant.className} lg:px-16 tracking-wide min-h-screen dark:text-white text-black 
+                    w-[100dvw]  bg-white dark:bg-[#131313]`}
                 id="container"
-                // onMouseMove={(event: React.MouseEvent) => trackCursor(event)}
             >
-                {/* <div id="cursor"
-                    className="fixed w-[50vw] h-[50vw] dark:bg-[#0a5e882b] rounded-full blur-3xl overflow-hidden pointer-events-none hidden md:block">
-                </div>
-
-                <div id="cursor"
-                    className="md:hidden fixed right-[10vw] w-[100vw] h-[100vw] bg-[#0099ff0f] rounded-full blur-3xl overflow-hidden pointer-events-none">
-                </div> */}
 
                 <ToggleButton />
 
