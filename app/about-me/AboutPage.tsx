@@ -4,7 +4,6 @@ import React from "react";
 import LinkButtons from "../components/LinkButtons";
 import ParentLayout from "../ParentLayout";
 import ExperienceSection from "./components/Experience";
-import {  Assistant } from "next/font/google";
 
 export default function AboutMePage() {
   return (
@@ -15,10 +14,7 @@ export default function AboutMePage() {
   )
 }
 
-const geist = Assistant({
-  weight: "500",
-  subsets: ["latin"],
-});
+
 function AboutMe() {
 
   const experiencePointsList = [
@@ -30,7 +26,7 @@ function AboutMe() {
 
   return (
     <>
-      <div className={` ${geist.className} tracking-wide  px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32`}>
+      <div className={`tracking-wide  px-6 sm:px-16 md:px-42 lg:px-64 py-24 md:py-32`}>
         <div className="p-4 py-8 pt-14 md:py-16" id="intro">
 
           <div className="md:text-7xl sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white">

@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
 import ResumePage from "./ResumePage"
 
 export const metadata: Metadata = {
@@ -7,14 +6,10 @@ export const metadata: Metadata = {
     description: "Portfolio of Vansh Anand",
 }
 
-const openSans = Open_Sans({
-    variable: "--font-open-sans",
-    subsets: ["latin"],
-})
 
 export default function Home() {
     return (
-        <div className={`${openSans.className}`}>
+        <div className={``}>
             <ResumePage/>
         </div>
     );

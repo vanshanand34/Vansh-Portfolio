@@ -3,14 +3,9 @@
 import Link from "next/link";
 import ParentLayout from "./ParentLayout";
 import Footer from "./components/Footer";
-import { Geist } from "next/font/google";
-import {  useState } from "react";
+import { useState } from "react";
 import { SkillCard } from "./components/SkillsCard";
 
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-})
 
 export default function HomePage() {
   return (
@@ -40,7 +35,7 @@ function HomePageComponent() {
 
   return (
     <>
-      <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
+      <div className={`px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
         onClick={handleClick} >
         <div className="text-4xl md:text-5xl lg:text-6xl/[4rem] dark:text-gray-200 text-gray-800 font-semibold py-4 pt-8">
           <div>Full Stack Developer</div>
