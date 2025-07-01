@@ -21,7 +21,7 @@ function ResumeComponent() {
                 text-gray-800">
                     Download Resume
                 </div>
-                <div className="text-center text-blue-400 py-4">
+                <div className="text-center text-blue-400 py-4 md:text-lg">
                     Click on the below link to download resume
                 </div>
 
@@ -31,7 +31,7 @@ function ResumeComponent() {
                         hover:text-white 
                         dark:outline-white dark:hover:outline-none dark:hover:bg-[#303030]
                         dark:bg-inherit dark:text-inherit dark:hover:text-inherit
-                        rounded-lg md:text-3xl text-lg py-3 px-4">
+                        rounded-3xl md:text-3xl text-lg py-3 px-4">
                         Download Resume
                     </button>
                 </div>

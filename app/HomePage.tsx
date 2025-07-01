@@ -42,7 +42,7 @@ function HomePageComponent() {
     <>
       <div className={`${geist.className} px-10 sm:px-20 md:px-38 lg:px-56 xl:px-64 pt-32 pb-6 md:pt-44`}
         onClick={handleClick} >
-        <div className="text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 text-gray-800 font-semibold py-4 pt-8">
+        <div className="text-4xl md:text-5xl lg:text-6xl/[4rem] dark:text-gray-200 text-gray-800 font-semibold py-4 pt-8">
           <div>Full Stack Developer</div>
           <div>and Tech Enthusiast</div>
         </div>
@@ -52,7 +52,7 @@ function HomePageComponent() {
         </div>
 
         <div className="py-4 pb-20">
-          <button className="outline outline-1 dark:outline-sky-900 dark:hover:bg-[#343434]
+          <button className="outline outline-1 dark:outline-sky-900 dark:hover:bg-[#343434] font-normal
           outline-sky-500 hover:outline-none hover:bg-sky-700 hover:text-white dark:hover:outline-none
           rounded-lg md:text-lg px-3 py-2">
             <Link href={"/about-me"}>

@@ -63,11 +63,12 @@ export function SkillCard({
                 return !prev
             });
         }
-    }, [openDropdownId])
+    }, [id, openDropdownId])
 
     return (
-        <div className="dropdown relative outline outline-1 outline-sky-500 dark:outline-sky-400 
-      text-black dark:text-white shadow py-3 px-1 rounded-lg cursor-pointer" id={id} >
+        <div className="dropdown relative text-black dark:text-white 
+        shadow-md outline outline-1 outline-[#3d3d3d53] dark:bg-[#242424b9] 
+        hover:outline-blue-600 py-3 px-1 rounded-lg cursor-pointer" id={id} >
             <div
                 className="p-2"
                 defaultValue={skillType}
@@ -77,21 +78,22 @@ export function SkillCard({
                     <div className="text-sm sm:text-base md:text-lg px-4">{skillType}
                     </div>
                     <div className="px-4">
-                        <svg className={`w-2 h-2 text-gray-800 transition-all dark:text-sky-300 ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                        <svg className={`w-3 h-3 text-blue-800 transition-all dark:text-white ${isCollapsed ? "" : "rotate-180"}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1" />
                         </svg>
                     </div>
                 </div>
-                <div className={`skills-card animate-jump-in shadow-lg outline outline-1 outline-[#1a81ffc5] p-6 py-8 absolute z-10 w-[102%] top-[120%]  -left-0.5  bg-white dark:bg-[#1d1d1d] 
-          text-gray-700 dark:text-white rounded-md ${isCollapsed ? "hidden" : "flex gap-x-6 gap-y-6 flex-wrap justify-center"}`}>
+                <div className={`skills-card animate-jump-in shadow-lg  p-6 py-8 absolute z-10 
+                w-[101%] top-[120%]  -left-0.5  bg-white dark:bg-[#1f1f1f] text-gray-700 dark:text-white 
+                rounded-md ${isCollapsed ? "hidden" : "flex gap-x-6 gap-y-6 flex-wrap justify-center"}
+                outline outline-1 outline-[#3d3d3d53] dark:outline-0`}>
                     {
                         skills.map(
                             (skill, index) => (
-                                <div key={index} className="grow basis-1/5 rounded flex-1 outline outline-1 p-2 flex 
-                                outline-[#079cffce]  dark:outline-[#ffffff3b] flex-col items-center text-5xl ">
+                                <div key={index} className="grow basis-1/5 rounded flex-1 p-2 flex flex-col items-center text-5xl shadow-[2px_2px_15px_#20202017] dark:outline dark:outline-1 dark:outline-[#3d3d3d85]">
 
-                                    <div className='pt-2 text-xl md:text-4xl'>{skillIcons[skill]} </div>
-                                    <div className='pt-2 text-[0.2em] md:text-sm' >{skill}</div>
+                                    <div className='text-xl md:text-4xl'>{skillIcons[skill]} </div>
+                                    <span className='text-[0.2em] md:text-sm' >{skill}</span>
                                 </div>
 
                             )
