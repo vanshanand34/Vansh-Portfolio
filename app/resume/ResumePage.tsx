@@ -32,7 +32,7 @@ function ResumeComponent() {
                         dark:outline-white dark:hover:outline-none dark:hover:bg-[#303030]
                         dark:bg-inherit dark:text-inherit dark:hover:text-inherit
                         rounded-3xl md:text-3xl text-lg py-3 px-4">
-                        Download Resume
+                        Download
                     </button>
                 </div>
             </div>

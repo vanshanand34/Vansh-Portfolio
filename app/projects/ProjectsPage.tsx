@@ -60,12 +60,12 @@ function ProjectPageComponent() {
                             techStack={["Reactjs", "MUI", "Django", "Typescript"]}
                         />
 
-                        <ProjectCard
+                        {/* <ProjectCard
                             projectLink="https://github.com/vanshanand34/typescript"
                             projectName="Custom Select"
                             projectDescription="A custom TypeScript-based select component replacing the standard HTML select, offering enhanced styling, accessibility features, and interactivity (such as search and multi-selection) for a better user experience."
                             techStack={["Typescript", "CSS", "Reactjs"]}
-                        />
+                        /> */}
 
                         <ProjectCard
                             projectLink="https://github.com/vanshanand34/Notes-Project"

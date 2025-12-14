@@ -43,7 +43,7 @@ function HomePageComponent() {
         </div>
 
         <div className="md:text-xl text-base sm:text-lg  text-sky-800 dark:text-[#71b5d2] font-normal py-4">
-          I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast passionate about building scalable applications and crafting efficient solutions. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
+          I&apos;m Vansh Anand, a Full Stack Developer and coding enthusiast, currently working as an Associate Software Developer at JTG. Skilled across front-end and back-end technologies, driven by curiosity and innovation.
         </div>
 
         <div className="py-4 pb-20">

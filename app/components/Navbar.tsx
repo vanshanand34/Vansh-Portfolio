@@ -45,8 +45,9 @@ export default function ResponsiveNavbar({ activeElement }: { activeElement: str
                 font-bold w-full p-2 py-4 pt-6 z-20 ${assistant.className}`}>
                 <div className="w-full px-3 h-12 text-sm flex justify-center">
 
-                    <div className="dark:bg-[#1e1e1e] bg-white dark:text-inherit text-gray-800
-                     dark:border dark:border-[#325bffa3] rounded-3xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 md:px-5 dark:shadow-[1px_1px_5px_#fff1] shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 backdrop-blur-xl">
+                    <div className="dark:bg-[#1e1e1ec3] bg-white dark:text-inherit text-gray-800
+                     dark:border dark:border-[#325bff58] rounded-3xl inline-flex items-center md:justify-between justify-between py-3 md:py-6 px-3 md:px-5 dark:shadow-[1px_1px_5px_#fff1] 
+                     shadow-[1px_1px_7px_#2d2d2d] md:gap-4 gap-1.5 backdrop-blur-xl">
 
                         <Link href={"/"}>
                             <div className={`${NavComponentStyle} ${getNavStyling("home")}`}>
